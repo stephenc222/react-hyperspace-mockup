@@ -1,0 +1,6 @@
+.welcome-section-container {
+  display: flex;
+  border: 1px solid red;
+  width: 100%;
+  flex-grow: 1;
+}

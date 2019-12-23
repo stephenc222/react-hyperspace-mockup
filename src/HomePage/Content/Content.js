@@ -10,6 +10,7 @@ const ContentItem = (children) => {
     style={{
       minHeight: '100%',
       maxHeight: '100%',
+      width: '100%',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center'
