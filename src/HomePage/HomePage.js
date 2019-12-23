@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Content from './Content'
+import Content from './Content/Content'
 import Sidebar from './Sidebar'
 import './HomePage.css'
 
