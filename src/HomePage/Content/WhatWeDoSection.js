@@ -17,7 +17,7 @@ const WHAT_WE_DO_LIST = [
 const ListItem = (props) => {
   const { icon, headerLabel, bodyText } = props
   return (
-    <div>
+    <div className='what-we-do-list-item' style={{ borderTop: '1px solid rgba(255, 255, 255, 0.15)', width: '100%' }}>
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <div
           style={{
@@ -26,8 +26,7 @@ const ListItem = (props) => {
             fontSize: 20,
             backgroundColor: 'white',
             display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
+            alignSelf: 'flex-start',
             padding: 5
           }}>
           <div style={{ color: '#b74e91' }}>
@@ -55,7 +54,13 @@ const WhatWeDoSection = () => {
         Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.
       </p>
       <div className='what-we-do-content-container'>
-        {WHAT_WE_DO_LIST.map(ListItem)}
+        {WHAT_WE_DO_LIST.map((item, index) => {
+          return (
+            <div className='column'>
+              <ListItem {...item} />
+            </div>
+          )
+        })}
       </div>
       <Button label='Learn More' />
     </div>
