@@ -1,0 +1,18 @@
+/* introduce media breakpoints */
+
+@media (max-width: 869px) {
+  .home-page-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 870px) {
+  .home-page-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,6 @@
+.generic-page-content-container {
+  display: flex;
+  height: 100%;
+  background-color: #312450;
+  color: rgba(255, 255, 255, 0.55);
+}

@@ -1,11 +1,22 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import HomePage from './HomePage/HomePage'
+import GenericPage from './GenericPage/GenericPage'
+import ElementsPage from './ElementsPage/ElementsPage'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      TODO
-    </div>
+    <Router>
+      <Route exact path='/generic' component={GenericPage} />
+      <Route exact path='/elements' component={ElementsPage} />
+      <Route exact path='/' component={HomePage} />
+    </Router>
   );
 }
 

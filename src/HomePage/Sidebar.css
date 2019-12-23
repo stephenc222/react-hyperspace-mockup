@@ -1,0 +1,58 @@
+/* This is "20%", the content is "80%" */
+@media (max-width: 420px) {
+  .sidebar-container {
+    display: none;
+  }
+}
+
+@media (min-width: 421px) { 
+  .sidebar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #312450;
+    flex: 1;
+  }
+
+  .sidebar-container--content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+  }
+
+  .sidebar-item--active {
+    text-align: right;
+  }
+
+  .sidebar-item-content {
+    text-align: right;
+    display: flex;
+    color: rgba(255, 255, 255, 0.35);
+    flex-direction: column;
+  }
+
+  .sidebar-item-content:hover {
+    text-align: right;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar-item-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* will include an animation "grow" from right to left 
+    then will shrink to disappear, left to right if was active
+  */
+  /* maybe "::before" to grow on top */
+  .sidebar-item-cool-underline {
+    background: #3c2c62;
+  }
+  .sidebar-item-cool-underline--active {
+    background: #3c2c62;
+  }
+}
