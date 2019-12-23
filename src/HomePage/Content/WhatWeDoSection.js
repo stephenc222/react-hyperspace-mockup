@@ -18,16 +18,18 @@ const ListItem = (props) => {
   const { icon, headerLabel, bodyText } = props
   return (
     <div className='what-we-do-list-item' style={{ borderTop: '1px solid rgba(255, 255, 255, 0.15)', width: '100%' }}>
-      <div style={{ display: 'flex', alignItems: 'center' }}>
+      <div style={{ display: 'flex', alignItems: 'center', padding: 20 }}>
         <div
+          // FIXME: revisit for tablet 
           style={{
-            minWidth: '20px',
             borderRadius: '50%',
             fontSize: 20,
             backgroundColor: 'white',
             display: 'flex',
             alignSelf: 'flex-start',
-            padding: 5
+            padding: 5,
+            marginTop: 10,
+            marginRight: 20
           }}>
           <div style={{ color: '#b74e91' }}>
             <FontAwesomeIcon icon={`${icon}`} />
