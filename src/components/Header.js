@@ -1,7 +1,7 @@
 import React from 'react'
 import './Header.css'
 
-const CompanyName = () => <div>Hyperspace</div>
+const CompanyName = () => <div>hyperspace</div>
 
 const HeaderLinkItem = (props) => {
   const { label, path, history } = props

@@ -1,6 +1,36 @@
 .generic-page-content-container {
   display: flex;
-  height: 100%;
+  flex-grow: 1;
   background-color: #312450;
+  width: 100%;
   color: rgba(255, 255, 255, 0.55);
+  
+}
+.generic-page-content-container h1 {
+  color: white;
+  font-size: 2.75em;
+  width: 100%;
+  margin: 1px;
+}
+.generic-page-content-container h1::after {
+  padding: 1px;
+  margin-top: 25px;
+  display: flex;
+  content: "";
+  background: linear-gradient(to right, #5e42a6, #b74e91);
+  margin-bottom:  1.3em;
+}
+
+.generic-page-content {
+  display: flex;
+  flex-direction: column;
+  margin: 64px;
+  border: 1px solid red;
+  width: 100%;
+}
+
+/* I like lightgreen */
+.generic-page-image-container {
+  background: lightgreen;
+  padding: 1px;
 }
