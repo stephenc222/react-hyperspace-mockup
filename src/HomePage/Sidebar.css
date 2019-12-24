@@ -8,14 +8,18 @@
 @media (min-width: 421px) { 
   .sidebar-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    width: 100%;
     background-color: #312450;
     flex: 1;
   }
 
   .sidebar-container--content {
     display: flex;
+    width: 100%;
+    padding-right: 35px;
+    padding-left: 50px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -32,27 +36,53 @@
     display: flex;
     color: rgba(255, 255, 255, 0.35);
     flex-direction: column;
+    text-align: right;
+    padding: 1.35em 0;
+    font-size: 0.6em;
+    letter-spacing: 0.25em;
+    font-weight: bold;
+  }
+
+  .sidebar-item-content--active {
+    text-align: right;
+    display: flex;
+    color: rgba(255, 255, 255, 1);
+    flex-direction: column;
+    text-align: right;
+    padding: 1.35em 0;
+    font-size: 0.6em;
+    letter-spacing: 0.25em;
+    font-weight: bold;
   }
 
   .sidebar-item-content:hover {
     text-align: right;
-    color: white;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.55);
     display: flex;
     flex-direction: column;
   }
   .sidebar-item-container {
     display: flex;
+    width: 100%;
+    padding-left: 10px;
+    flex-grow: 1;
+    text-align: right;
     flex-direction: column;
+    padding: 12.5px;
+    cursor: pointer;
   }
 
   /* will include an animation "grow" from right to left 
     then will shrink to disappear, left to right if was active
   */
   /* maybe "::before" to grow on top */
-  .sidebar-item-cool-underline {
+  .sidebar-item-underline {
     background: #3c2c62;
+    border-bottom: 1px solid red;
   }
-  .sidebar-item-cool-underline--active {
+  .sidebar-item-underline--active {
     background: #3c2c62;
+    border-bottom: 1px solid blue;
   }
 }
