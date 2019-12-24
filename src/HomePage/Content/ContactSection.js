@@ -36,19 +36,19 @@ const Social = (
   <div className='contact-section-stats-container-item'>
     Social
     <p>
-      <span style={{ padding: 5 }}>
+      <span className='contact-section-icon-container'>
         <FontAwesomeIcon icon={['fab', 'twitter']} />
       </span>
-      <span style={{ padding: 5 }}>
+      <span className='contact-section-icon-container'>
         <FontAwesomeIcon icon={['fab', 'facebook-f']} />
       </span>
-      <span style={{ padding: 5 }}>
+      <span className='contact-section-icon-container'>
         <FontAwesomeIcon icon={['fab', 'github']} />
       </span>
-      <span style={{ padding: 5 }}>
+      <span className='contact-section-icon-container'>
         <FontAwesomeIcon icon={['fab', 'instagram']} />
       </span>
-      <span style={{ padding: 5 }}>
+      <span className='contact-section-icon-container'>
         <FontAwesomeIcon icon={['fab', 'linkedin-in']} />
       </span>
     </p>
