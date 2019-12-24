@@ -1,0 +1,69 @@
+.contact-section-container {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  padding: 4em 4em 2em 4em;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #5e42a6;
+  height: 100%;
+}
+
+.contact-section-container p {
+  color: rgba(255, 255, 255, 0.55);
+  font-weight: normal;
+}
+
+
+@media (max-width: 869px) {
+  .contact-section-content-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-section-form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+}
+@media (min-width: 870px) {
+  .contact-section-content-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .contact-section-form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-right: 30px;
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+  }
+}
+
+.contact-section-text-input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.contact-section-text-inputs-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.contact-section-stats-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section-stats-container-item {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
