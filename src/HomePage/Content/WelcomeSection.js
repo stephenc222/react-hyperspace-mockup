@@ -1,14 +1,8 @@
 import React from 'react'
 import Button from '../../Button'
+import DottedLink from '../../DottedLink'
 import './WelcomeSection.css'
 
-const DottedLink = ({ text, href }) =>
-  <span
-    style={{ borderBottom: 'dotted 1px rgba(255, 255, 255, 0.35)' }}
-    onClick={() => window.open(href, '_blank')}
-  >
-    {text}
-  </span>
 
 const WelcomeSection = () => {
   return (

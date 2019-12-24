@@ -1,0 +1,9 @@
+.footer-container {
+  display: flex;
+  background-color: #493382;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.15);
+  font-size: 13px;
+  width: 100%;
+  padding-left: 64px;
+}
