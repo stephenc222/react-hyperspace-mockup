@@ -1,22 +1,27 @@
 import React from 'react'
 import './Sidebar.css'
 
-const SidebarItem = ({ label, animateToSection, index }) => {
+const SidebarItem = ({ label, activeSection, sectionName, onActiveSectionChange }) => {
   return (
-    <div className='sidebar-item-container' onClick={() => console.warn('ANIMATE TO:', { animateToSection })} >
-      <div className={`sidebar-item-content${index === 0 ? '--active' : ''}`}>{label}</div>
-      {/* FIXME: quick addition to get styling of active/inactive item correct */}
-      <div className={`sidebar-item-underline${index === 0 ? '--active' : ''}`} />
+    <div className='sidebar-item-container' onClick={() => onActiveSectionChange(sectionName)} >
+      <div className={`sidebar-item-content${activeSection === sectionName ? '--active' : ''}`}>{label}</div>
+      <div className={`sidebar-item-underline${activeSection === sectionName ? '--active' : ''}`} />
     </div>
   )
 }
 
 const Sidebar = (props) => {
-  const { sidebarLinks } = props
+  const { sidebarLinks, activeSection, onActiveSectionChange } = props
   return (
     <div className='sidebar-container'>
       <div className='sidebar-container--content'>
-        {sidebarLinks.map((item, index) => <SidebarItem {...item} index={index} key={`si_${index}`} />)}
+        {sidebarLinks.map((item, index) =>
+          <SidebarItem
+            onActiveSectionChange={onActiveSectionChange}
+            activeSection={activeSection}
+            key={`si_${index}`}
+            {...item}
+          />)}
       </div>
     </div>
   )
