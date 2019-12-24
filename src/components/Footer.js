@@ -1,5 +1,5 @@
 import React from 'react'
-import DottedLink from '../../DottedLink'
+import DottedLink from './DottedLink'
 import './Footer.css'
 
 const Footer = () => {

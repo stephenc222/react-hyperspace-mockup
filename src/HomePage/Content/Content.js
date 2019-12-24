@@ -3,7 +3,7 @@ import WelcomeSection from './WelcomeSection'
 import WhoWeAreSection from './WhoWeAreSection'
 import WhatWeDoSection from './WhatWeDoSection'
 import ContactSection from './ContactSection'
-import Footer from './Footer'
+import Footer from '../../components/Footer'
 import './Content.css'
 
 const ContentItem = (children) => {

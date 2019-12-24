@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../../Button'
+import Button from '../../components/Button'
 import './WhoWeAreSection.css'
 
 const WHO_WE_ARE_SECTIONS = [

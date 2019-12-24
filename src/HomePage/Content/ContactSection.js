@@ -1,8 +1,8 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Button from '../../Button'
-import TextInput from '../../TextInput'
-import TextArea from '../../TextArea'
+import Button from '../../components/Button'
+import TextInput from '../../components/TextInput'
+import TextArea from '../../components/TextArea'
 import './ContactSection.css'
 
 const Address = (

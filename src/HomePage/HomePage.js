@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Content from './Content/Content'
-import Sidebar from './Sidebar'
+import Sidebar from '../components/Sidebar'
 import './HomePage.css'
 
 // FIXME: quick hack to create links for this static "marketing" like template

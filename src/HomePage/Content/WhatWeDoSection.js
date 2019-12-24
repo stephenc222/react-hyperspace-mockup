@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Button from '../../Button'
+import Button from '../../components/Button'
 import './WhatWeDoSection.css'
 
 

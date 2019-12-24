@@ -1,6 +1,6 @@
 import React from 'react'
-import Button from '../../Button'
-import DottedLink from '../../DottedLink'
+import Button from '../../components/Button'
+import DottedLink from '../../components/DottedLink'
 import './WelcomeSection.css'
 
 
