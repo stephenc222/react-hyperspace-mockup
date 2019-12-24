@@ -24,8 +24,10 @@ const HeaderLinks = ({ headerLinks }) => {
 const Header = ({ headerLinks = [] }) => {
   return (
     <div className='header-container'>
-      <CompanyName />
-      <HeaderLinks headerLinks={headerLinks} />
+      <div className='header-content'>
+        <CompanyName />
+        <HeaderLinks headerLinks={headerLinks} />
+      </div>
     </div>
   )
 }

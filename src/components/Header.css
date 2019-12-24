@@ -8,14 +8,28 @@
   font-size: 1.25em;
 }
 
+.header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2em;
+}
+
 .header-links-container {
   display: flex;
+  text-transform: uppercase;
+  font-size: 0.6em;
+  font-weight: bold;
+  letter-spacing: 0.25em;
 }
 
 .header-link-item-content {
   display: flex;
   flex-direction: column;
   color: rgba(255, 255, 255, 0.35);
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 .header-link-item-content:hover {
