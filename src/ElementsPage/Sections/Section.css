@@ -1,3 +1,30 @@
+ol {
+  list-style: decimal;
+  margin: 0 0 2em 0;
+  padding-left: 1.25em;
+}
+
+ul {
+  list-style: disc;
+  margin: 0 0 2em 0;
+  padding-left: 1em;
+}
+
+ul.alt {
+  list-style: none;
+  margin: 0 0 2em 0;
+  padding-left: 0; 
+}
+
+ul.alt li:first-child {
+  border-top: none;
+  padding: 0.5em 0;
+}
+ul.alt li {
+  border-top: solid 1px rgba(255, 255, 255, 0.15);
+  padding: 0.5em 0;
+}
+
 .section-container {
   display: flex;
   flex-direction: column;
@@ -35,4 +62,18 @@
   flex-direction: column;
   line-height: 1.75;
   font-weight: 400;
+}
+
+
+/* LIST SECTION CSS */
+.list-section-content {
+  display: flex;
+  /* border: 1px solid red; */
+  flex-direction: row;
+  flex-grow: 1
+}
+
+.list-section-column {
+  flex: 1;
+  padding-right: 1em;
 }
