@@ -14,6 +14,7 @@
   font-size: 0.6em;
   font-weight: bold;
   max-width: 105px;
+  max-height: 5em;
 }
 
 /* For buttons. Don't judge me... yet */
@@ -28,6 +29,14 @@
   max-width: 75px;
   min-width: 75px;
   max-height: 4.5em;
+  padding: 0 1.75em;
+}
+
+.large {
+  border-radius: 3em;
+  font-size: 0.8em;
+  max-width: 125px;
+  min-width: 125px;
   padding: 0 1.75em;
 }
 
