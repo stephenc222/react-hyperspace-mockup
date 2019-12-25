@@ -8,9 +8,9 @@ const getClassName = (inverse, size = '') => {
   return `button-container ${size}`
 }
 
-const Button = ({ label, onClick, inverse, size }) => {
+const Button = ({ label, onClick, inverse, size, style }) => {
   return (
-    <div onClick={onClick} className={getClassName(inverse, size)}>
+    <div onClick={onClick} style={style} className={getClassName(inverse, size)}>
       <div>{label}</div>
     </div>
   )

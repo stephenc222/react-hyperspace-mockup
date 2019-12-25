@@ -2,43 +2,35 @@ import React from 'react'
 import Section from './Section'
 import Button from '../../components/Button'
 
+const BUTTON_SPACING = { marginBottom: 10, marginTop: 10, marginRight: 20 }
+
 const ActionsSection = () => {
   return (
     <Section header='Actions'>
       <div className='list-section-content'>
         <div className='list-section-column'>
           <div style={{ display: 'flex', paddingBottom: 30 }}>
-            <Button inverse label='Default' />
-            <span style={{ padding: 10 }} />
-            <Button label='Default' />
+            <Button style={BUTTON_SPACING} inverse label='Default' />
+            <Button style={BUTTON_SPACING} label='Default' />
           </div>
           <div style={{ display: 'flex' }}>
-            <Button size='small' inverse label='small' />
-            <span style={{ padding: 10 }} />
-            <Button size='small' label='small' />
+            <Button style={BUTTON_SPACING} size='small' inverse label='small' />
+            <Button style={BUTTON_SPACING} size='small' label='small' />
           </div>
           <div style={{ display: 'flex', paddingTop: 30, paddingBottom: 30, flexDirection: 'column' }}>
-            <Button inverse label='Default' />
-            <span style={{ padding: 10 }} />
-            <Button label='Default' />
+            <Button style={BUTTON_SPACING} inverse label='Default' />
+            <Button style={BUTTON_SPACING} label='Default' />
           </div>
           <div style={{ display: 'flex', paddingTop: 0, flexDirection: 'column', justifyContent: 'flex-start' }}>
-            <Button size='small' inverse label='small' />
-            <span style={{ padding: 10 }} />
-            <Button size='small' label='small' />
+            <Button style={BUTTON_SPACING} size='small' inverse label='small' />
+            <Button style={BUTTON_SPACING} size='small' label='small' />
           </div>
         </div>
         <div className='list-section-column'>
-          <div style={{ paddingBottom: 30 }}>
-            <Button inverse label='Default' size='grow' />
-            <span style={{ padding: 10 }} />
-            <Button label='Default' size='grow' />
-          </div>
-          <div style={{}}>
-            <Button size='grow' inverse label='small' />
-            <span style={{ padding: 10 }} />
-            <Button size='grow' label='small' />
-          </div>
+          <Button style={BUTTON_SPACING} inverse label='Default' size='grow' />
+          <Button style={BUTTON_SPACING} label='Default' size='grow' />
+          <Button style={BUTTON_SPACING} size='grow' inverse label='small' />
+          <Button style={BUTTON_SPACING} size='grow' label='small' />
         </div>
       </div>
     </Section>

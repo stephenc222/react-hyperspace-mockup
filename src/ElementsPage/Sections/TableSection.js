@@ -1,100 +1,41 @@
 import React from 'react'
 import Section from './Section'
+import Table from '../../components/Table'
+
+const TABLE_ONE_COLUMNS = [
+  { key: 'name', label: 'Name' },
+  { key: 'description', label: 'Description' },
+  { key: 'price', label: 'Price' },
+]
+const TABLE_ONE_DATA = [
+  { name: 'Item One', description: 'Ante turpis integer aliquet porttitor.', price: '29.99' },
+  { name: 'Item Two', description: 'Vis ac commodo adipiscing arcu aliquet.', price: '19.99' },
+  { name: 'Item Three', description: ' Morbi faucibus arcu accumsan lorem.', price: '29.99' },
+  { name: 'Item Four', description: 'Vitae integer tempus condimentum.', price: '19.99' },
+  { name: 'Item Five', description: 'Ante turpis integer aliquet porttitor.', price: '29.99' }
+]
+
+const TABLE_ONE_SUMMARY_DATA = 100.00
 
 const TableSection = () => {
   return (
     <Section header='Table'>
       <div className='table-section-content' >
         <h3>Default</h3>
-        <div className="table-wrapper">
-          <table>
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Price</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Item One</td>
-                <td>Ante turpis integer aliquet porttitor.</td>
-                <td>29.99</td>
-              </tr>
-              <tr>
-                <td>Item Two</td>
-                <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                <td>19.99</td>
-              </tr>
-              <tr>
-                <td>Item Three</td>
-                <td> Morbi faucibus arcu accumsan lorem.</td>
-                <td>29.99</td>
-              </tr>
-              <tr>
-                <td>Item Four</td>
-                <td>Vitae integer tempus condimentum.</td>
-                <td>19.99</td>
-              </tr>
-              <tr>
-                <td>Item Five</td>
-                <td>Ante turpis integer aliquet porttitor.</td>
-                <td>29.99</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td colspan="2"></td>
-                <td>100.00</td>
-              </tr>
-            </tfoot>
-          </table>
-        </div>
+        <Table
+          columns={TABLE_ONE_COLUMNS}
+          data={TABLE_ONE_DATA}
+          formatSummaryData={dataValue => parseInt(dataValue) && dataValue.toFixed(2)}
+          summaryValue={TABLE_ONE_SUMMARY_DATA}
+        />
         <h3>Alternate</h3>
-        <div className="table-wrapper">
-          <table className="alt">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Price</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Item One</td>
-                <td>Ante turpis integer aliquet porttitor.</td>
-                <td>29.99</td>
-              </tr>
-              <tr>
-                <td>Item Two</td>
-                <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                <td>19.99</td>
-              </tr>
-              <tr>
-                <td>Item Three</td>
-                <td> Morbi faucibus arcu accumsan lorem.</td>
-                <td>29.99</td>
-              </tr>
-              <tr>
-                <td>Item Four</td>
-                <td>Vitae integer tempus condimentum.</td>
-                <td>19.99</td>
-              </tr>
-              <tr>
-                <td>Item Five</td>
-                <td>Ante turpis integer aliquet porttitor.</td>
-                <td>29.99</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td colspan="2"></td>
-                <td>100.00</td>
-              </tr>
-            </tfoot>
-          </table>
-        </div>
+        <Table
+          columns={TABLE_ONE_COLUMNS}
+          data={TABLE_ONE_DATA}
+          formatSummaryData={dataValue => parseInt(dataValue) && dataValue.toFixed(2)}
+          summaryValue={TABLE_ONE_SUMMARY_DATA}
+          tableClassName='alt'
+        />
       </div>
     </Section>
   )
