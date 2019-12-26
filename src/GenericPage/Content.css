@@ -31,10 +31,21 @@
   line-height: 28px;
 }
 
-/* I like lightgreen */
-.generic-page-image-container {
+.image-container {
   background: lightgreen;
   padding: 1px;
   height: 30em;
   border-radius: 0.2em;
+}
+
+.image.left {
+  float: left;
+  margin: 0 1.5em 1em 0;
+  top: 0.25em;
+}
+
+.image.right {
+  float: right;
+  margin: 0 0 1em 1.5em;
+  top: 0.25em;
 }
