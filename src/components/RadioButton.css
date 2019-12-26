@@ -1,0 +1,15 @@
+.radio-button-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.radio-button-content {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.radio-button-label {
+  padding: 1em;
+}
