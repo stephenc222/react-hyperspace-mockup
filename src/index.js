@@ -6,8 +6,21 @@ import {
 import { createBrowserHistory } from 'history'
 import ReactDOM from 'react-dom'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab, faLinkedinIn, faFacebookF, faGithub, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
-import { faCheckSquare, faCode } from '@fortawesome/free-solid-svg-icons'
+import {
+  faCheckSquare,
+  faCode,
+  faSave,
+  faUpload,
+  faDownload
+} from '@fortawesome/free-solid-svg-icons'
+import {
+  fab,
+  faLinkedinIn,
+  faFacebookF,
+  faGithub,
+  faTwitter,
+  faInstagram
+} from '@fortawesome/free-brands-svg-icons'
 import HomePage from './HomePage/HomePage'
 import GenericPage from './GenericPage/GenericPage'
 import ElementsPage from './ElementsPage/ElementsPage'
@@ -15,7 +28,19 @@ import './index.css'
 
 const history = createBrowserHistory()
 
-library.add(fab, faCheckSquare, faCode, faLinkedinIn, faFacebookF, faGithub, faTwitter, faInstagram)
+library.add(
+  fab,
+  faCheckSquare,
+  faCode,
+  faLinkedinIn,
+  faFacebookF,
+  faGithub,
+  faTwitter,
+  faInstagram,
+  faSave,
+  faUpload,
+  faDownload
+)
 
 function App() {
   return (
