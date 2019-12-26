@@ -8,8 +8,7 @@ const WHO_WE_ARE_SECTIONS = [
   { headerLabel: 'Ultricies aliquam', bodyText: 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.' },
 ]
 
-const SubSectionItem = (props) => {
-  const { headerLabel, bodyText, onClick } = props
+const SubSectionItem = ({ headerLabel, bodyText, onClick }) => {
   return (
     <div className='sub-section-container'>
       <div className='sub-section-image'>
@@ -17,7 +16,7 @@ const SubSectionItem = (props) => {
       <div className='sub-section-text-content'>
         <h2>{headerLabel}</h2>
         <p>{bodyText}</p>
-        <div><Button label='Learn More' /></div>
+        <div><Button onClick={onClick} label='Learn More' /></div>
       </div>
     </div>
   )

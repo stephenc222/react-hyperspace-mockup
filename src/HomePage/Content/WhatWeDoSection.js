@@ -48,7 +48,7 @@ const ListItem = (props) => {
   )
 }
 
-const WhatWeDoSection = () => {
+const WhatWeDoSection = ({ onClick }) => {
   return (
     <div className='what-we-do-container'>
       <h2>What we do</h2>
@@ -64,7 +64,7 @@ const WhatWeDoSection = () => {
           )
         })}
       </div>
-      <Button label='Learn More' />
+      <Button onClick={onClick} label='Learn More' />
     </div>
   )
 }

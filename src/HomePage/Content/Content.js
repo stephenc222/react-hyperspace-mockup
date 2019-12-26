@@ -6,37 +6,15 @@ import ContactSection from './ContactSection'
 import Footer from '../../components/Footer'
 import './Content.css'
 
-const ContentItem = (children) => {
-  return <div
-    style={{
-      minHeight: '100%',
-      maxHeight: '100%',
-      width: '100%',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center'
-    }}
-  >
-    {children}
-  </div>
-}
-
-const getContentItems = () => [
-  <WelcomeSection />,
-  <WhoWeAreSection />,
-  <WhatWeDoSection />,
-  <ContactSection />,
-  <Footer />
-]
-
-const Content = () => {
-  const content = getContentItems()
+const Content = ({ history }) => {
   return (
     <div className='home-page-content-container'>
       <div className='home-page-content-container-content'>
-        {
-          content.map(ContentItem)
-        }
+        <WelcomeSection history={history} />
+        <WhoWeAreSection onClick={() => history.push('/generic')} />
+        <WhatWeDoSection onClick={() => history.push('/generic')} />
+        <ContactSection onClick={() => history.push('/generic')} />
+        <Footer />
       </div>
     </div>
   )
