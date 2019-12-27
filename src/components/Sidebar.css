@@ -5,7 +5,90 @@
   }
 }
 
-@media (min-width: 421px) { 
+@media (min-width: 421px) and (max-width: 869px) {
+  .sidebar-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    background-color: #312450;
+    flex-shrink: 1;
+  }
+
+  .sidebar-container--content {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+  }
+
+  .sidebar-item--active {
+    text-align: right;
+  }
+
+  .sidebar-item-content {
+    text-align: right;
+    display: flex;
+    color: rgba(255, 255, 255, 0.35);
+    flex-direction: column;
+    text-align: right;
+    padding: 1.35em 0;
+    font-size: 0.6em;
+    letter-spacing: 0.25em;
+    font-weight: bold;
+    padding-left: 2em;
+  }
+
+  .sidebar-item-content--active {
+    text-align: right;
+    display: flex;
+    color: rgba(255, 255, 255, 1);
+    flex-direction: column;
+    text-align: right;
+    padding: 1.35em 0;
+    font-size: 0.6em;
+    letter-spacing: 0.25em;
+    font-weight: bold;
+    padding-left: 2em;
+  }
+
+  .sidebar-item-content:hover {
+    text-align: right;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.55);
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar-item-container {
+    display: flex;
+    /* flex-grow: 1; */
+    text-align: right;
+    flex-direction: column;
+    padding: 0.02em;
+    cursor: pointer;
+  }
+
+  /* will include an animation "grow" from right to left 
+    then will shrink to disappear, left to right if was active
+  */
+  .sidebar-item-underline {
+    padding-bottom: 2px;
+    border-radius: 0.2em;
+    margin-left: 2em;
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .sidebar-item-underline--active {
+    background: linear-gradient(to right, #5e42a6, #b74e91);
+    padding-bottom: 2px;
+    margin-left: 1em;
+    border-radius: 0.2em;
+  }
+}
+
+@media (min-width: 870px) { 
   .sidebar-container {
     display: flex;
     justify-content: flex-end;
