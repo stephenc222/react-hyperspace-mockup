@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  height: 100%;
   flex: 1;
   color: white;
   padding: 4em 4em 2em 4em;
@@ -15,7 +14,7 @@
   line-height: 1.75;
 }
 
-@media (min-width: 421px) {
+@media (min-width: 870px) {
   .column {
     width: 49.90%;
     border-left: solid 1px rgba(255, 255, 255, 0.15);
@@ -39,7 +38,7 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 869px) {
   .column {
     width: 100%;
   }

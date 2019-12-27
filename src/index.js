@@ -9,6 +9,11 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import {
   faCheckSquare,
   faCode,
+  faCog,
+  faDesktop,
+  faGem,
+  faLink,
+  faLock,
   faSave,
   faUpload,
   faDownload
@@ -31,7 +36,12 @@ const history = createBrowserHistory()
 library.add(
   fab,
   faCheckSquare,
+  faCog,
   faCode,
+  faDesktop,
+  faGem,
+  faLink,
+  faLock,
   faLinkedinIn,
   faFacebookF,
   faGithub,

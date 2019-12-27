@@ -64,11 +64,9 @@ const ContactSection = () => {
       <div className='contact-section-content-container'>
         <div className='contact-section-form-container'>
           <div className='contact-section-text-input-container'>
-            <div className='contact-section-text-inputs-container'>
-              <TextInput label='Name' />
-              <div style={{ padding: 20 }} />
-              <TextInput label='Email' />
-            </div>
+            <TextInput label='Name' />
+            <div style={{ padding: 20 }} />
+            <TextInput label='Email' />
           </div>
           <TextArea label='Message' />
           <div style={{ paddingTop: 30 }}>
