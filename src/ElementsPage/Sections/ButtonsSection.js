@@ -9,37 +9,37 @@ const IconButton = ({ icon, label, ...rest }) =>
 const ButtonsSection = () => {
   return (
     <Section header='Buttons'>
-      <div className='list-section-column'>
-        <div style={{ display: 'flex', paddingBottom: 30 }}>
+      <div className='buttons-section-content'>
+        <div className='buttons-sub-section-content'>
           <Button inverse label='Primary' />
           <span style={{ padding: 10 }} />
           <Button label='Default' />
         </div>
-        <div style={{ display: 'flex', paddingBottom: 30 }}>
+        <div className='buttons-sub-section-content'>
           <Button size='large' label='large' />
           <span style={{ padding: 10 }} />
           <Button label='default' />
           <span style={{ padding: 10 }} />
           <Button size='small' label='small' />
         </div>
-        <div style={{ display: 'flex', paddingBottom: 30 }}>
+        <div className='buttons-sub-section-content'>
           <Button style={{ marginRight: 20 }} size='fit' inverse label='Fit' />
           <Button style={{ marginRight: 20 }} size='fit' label='Fit' />
           <Button style={{ marginRight: 20 }} size='fit' label='Fit' />
         </div>
-        <div style={{ display: 'flex', paddingBottom: 30 }}>
+        <div className='buttons-sub-section-content'>
           <Button style={{ marginRight: 20 }} size='small fit' inverse label='Fit + small' />
           <Button style={{ marginRight: 20 }} size='small fit' label='Fit + small' />
           <Button style={{ marginRight: 20 }} size='small fit' label='Fit + small' />
         </div>
-        <div style={{ display: 'flex', paddingBottom: 30 }}>
+        <div className='buttons-sub-section-content'>
           <IconButton inverse label='icon' icon='download' />
           <span style={{ padding: 10 }} />
           <IconButton label='icon' icon='upload' />
           <span style={{ padding: 10 }} />
           <IconButton label='icon' icon='save' />
         </div>
-        <div style={{ display: 'flex', paddingBottom: 30 }}>
+        <div className='buttons-sub-section-content'>
           <Button inverse disabled label='Disabled' />
           <span style={{ padding: 10 }} />
           <Button disabled label='Disabled' />

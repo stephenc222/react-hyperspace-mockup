@@ -23,7 +23,7 @@ const FormSection = () => {
   return (
     <Section header='Form'>
       <form>
-        <div style={{ display: 'flex', flexDirection: 'row' }}>
+        <div className='form-section-input-container'>
           <TextInput placeholder='Name' />
           <span style={{ padding: 10 }} />
           <TextInput placeholder='Email' />
@@ -34,17 +34,17 @@ const FormSection = () => {
           selected={selected}
           onChange={onSelectedChange}
         />
-        <div style={{ display: 'flex', flexDirection: 'row' }}>
+        <div className='form-section-input-container'>
           <RadioButton onChange={onRadioValueChange} radioValue='low' label='Low' checked={radioValue === 'low'} />
           <RadioButton onChange={onRadioValueChange} radioValue='normal' label='Normal' checked={radioValue === 'normal'} />
           <RadioButton onChange={onRadioValueChange} radioValue='high' label='High' checked={radioValue === 'high'} />
         </div>
-        <div style={{ display: 'flex', flexDirection: 'row' }}>
+        <div className='form-section-input-container'>
           <Checkbox value={shouldEmail} checked={!!shouldEmail} onChange={onShouldEmailCheckboxChange} label='Email me a copy' />
           <Checkbox value={isRobot} checked={!!isRobot} onChange={onIsRobotCheckboxChange} label='Not a robot' />
         </div>
         <TextArea placeholder='Enter your message' />
-        <div style={{ display: 'flex', flexDirection: 'row', paddingTop: 20 }}>
+        <div className='form-section-input-container' style={{ paddingTop: 20 }}>
           <Button inverse label='Send Message' />
           <span style={{ padding: 10 }} />
           <Button label='Reset' />

@@ -8,19 +8,19 @@ const ImageSection = () => {
       <h3>Fit</h3>
       <div className='image-container' />
       <div style={{ display: 'flex', flexDirection: 'row', paddingTop: 20, flexShrink: 1, justifyContent: 'space-between' }}>
-        <div style={{ height: '23em', width: '23em' }} className='image-container' />
-        <div style={{ height: '23em', width: '23em' }} className='image-container' />
-        <div style={{ height: '23em', width: '23em' }} className='image-container' />
+        <div style={{ height: '22em', width: '22em' }} className='image-container' />
+        <div style={{ height: '22em', width: '22em' }} className='image-container' />
+        <div style={{ height: '22em', width: '22em' }} className='image-container' />
       </div>
       <div style={{ display: 'flex', flexDirection: 'row', paddingTop: 20, flexShrink: 1, justifyContent: 'space-between' }}>
-        <div style={{ height: '23em', width: '23em' }} className='image-container' />
-        <div style={{ height: '23em', width: '23em' }} className='image-container' />
-        <div style={{ height: '23em', width: '23em' }} className='image-container' />
+        <div style={{ height: '22em', width: '22em' }} className='image-container' />
+        <div style={{ height: '22em', width: '22em' }} className='image-container' />
+        <div style={{ height: '22em', width: '22em' }} className='image-container' />
       </div>
       <div style={{ display: 'flex', flexDirection: 'row', paddingTop: 20, flexShrink: 1, justifyContent: 'space-between' }}>
-        <div style={{ height: '23em', width: '23em' }} className='image-container' />
-        <div style={{ height: '23em', width: '23em' }} className='image-container' />
-        <div style={{ height: '23em', width: '23em' }} className='image-container' />
+        <div style={{ height: '22em', width: '22em' }} className='image-container' />
+        <div style={{ height: '22em', width: '22em' }} className='image-container' />
+        <div style={{ height: '22em', width: '22em' }} className='image-container' />
       </div>
       <h3>Left & Right</h3>
       <p>

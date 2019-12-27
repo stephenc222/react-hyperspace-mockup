@@ -49,8 +49,10 @@
 }
 
 .grow {
-  min-width: 100%;
-  max-width: 100%;
+  /* min-width: 100%;
+  max-width: 100%; */
+  max-width: none;
+  flex: 1;
   flex-grow: 1;
 }
 

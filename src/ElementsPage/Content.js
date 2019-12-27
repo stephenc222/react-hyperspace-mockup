@@ -12,16 +12,19 @@ const Content = () => {
   return (
     <div className='elements-page-content-container'>
       <div className='elements-page-content'>
-        <h1>
-          Elements
-        </h1>
+        <div>
+          <h1>
+            Elements
+          </h1>
+        </div>
         <TextSection />
         <ListSection />
         <ActionsSection />
         <TableSection />
         <ButtonsSection />
         <FormSection />
-        <ImageSection />
+        {/* FIXME: these sections are consistently "too wide", which causes x-axis overflow undesirably */}
+        {/* <ImageSection /> */}
       </div>
     </div>
   )

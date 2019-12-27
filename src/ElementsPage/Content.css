@@ -1,40 +1,86 @@
-.elements-page-content-container {
-  display: flex;
-  flex-grow: 1;
-  background-color: #312450;
-  width: 100%;
-  color: rgba(255, 255, 255, 0.55);
+
+
+@media (max-width: 420px) {
+  .elements-page-content-container {
+    display: flex;
+    flex-grow: 1;
+    background-color: #312450;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.55);
+  }
+
+  .elements-page-content-container h1 {
+    color: white;
+    font-size: 2.75em;
+    width: 100%;
+    margin: 1px;
+  }
+  .elements-page-content-container h1::after {
+    padding: 1px;
+    margin-top: 25px;
+    display: flex;
+    content: "";
+    background: linear-gradient(to right, #5e42a6, #b74e91);
+    margin-bottom:  1.3em;
+  }
+
+  .elements-page-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    width: 100%;
+    line-height: 28px;
+  }
+
+  /* I like lightgreen */
+  .elements-page-image-container {
+    background: lightgreen;
+    padding: 1px;
+    height: 30em;
+    border-radius: 0.2em;
+  }
 }
 
-.elements-page-content-container h1 {
-  color: white;
-  font-size: 2.75em;
-  width: 100%;
-  margin: 1px;
-}
-.elements-page-content-container h1::after {
-  padding: 1px;
-  margin-top: 25px;
-  display: flex;
-  content: "";
-  background: linear-gradient(to right, #5e42a6, #b74e91);
-  margin-bottom:  1.3em;
-}
+@media (min-width: 421px) {
+  .elements-page-content-container {
+    display: flex;
+    /* flex-grow: 1; */
+    background-color: #312450;
+    /* width: 100%; */
+    color: rgba(255, 255, 255, 0.55);
+  }
 
-.elements-page-content {
-  display: flex;
-  flex-direction: column;
-  margin-left: 15em;
-  margin-right: 15em;
-  margin-top: 5em;
-  width: 100%;
-  line-height: 28px;
-}
+  .elements-page-content-container h1 {
+    color: white;
+    font-size: 2.75em;
+    /* width: 100%; */
+    margin: 1px;
+  }
+  .elements-page-content-container h1::after {
+    padding: 1px;
+    margin-top: 25px;
+    display: flex;
+    content: "";
+    background: linear-gradient(to right, #5e42a6, #b74e91);
+    margin-bottom:  1.3em;
+  }
 
-/* I like lightgreen */
-.elements-page-image-container {
-  background: lightgreen;
-  padding: 1px;
-  height: 30em;
-  border-radius: 0.2em;
+  .elements-page-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10em;
+    margin-left: 15em;
+    margin-right: 15em;
+    line-height: 28px;
+  }
+
+  /* I like lightgreen */
+  .elements-page-image-container {
+    background: lightgreen;
+    padding: 1px;
+    height: 30em;
+    border-radius: 0.2em;
+  }
 }
