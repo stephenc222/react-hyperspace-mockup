@@ -1,51 +1,107 @@
-.generic-page-content-container {
-  display: flex;
-  flex-grow: 1;
-  background-color: #312450;
-  width: 100%;
-  color: rgba(255, 255, 255, 0.55);
+@media (max-width: 420px) {
+  .generic-page-content-container {
+    display: flex;
+    flex-grow: 1;
+    background-color: #312450;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.55);
+  }
+
+  .generic-page-content-container h1 {
+    color: white;
+    font-size: 2em;
+    width: 100%;
+    margin: 1px;
+  }
+  .generic-page-content-container h1::after {
+    padding: 1px;
+    margin-top: 25px;
+    display: flex;
+    content: "";
+    background: linear-gradient(to right, #5e42a6, #b74e91);
+    margin-bottom:  1.3em;
+  }
+
+  .generic-page-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 5em;
+    width: 100%;
+    line-height: 28px;
+  }
+
+  .image-container {
+    background: lightgreen;
+    padding: 1px;
+    height: 7.5em;
+    border-radius: 0.2em;
+  }
+
+  .image.left {
+    float: left;
+    margin: 0 1.5em 1em 0;
+    top: 0.25em;
+  }
+
+  .image.right {
+    float: right;
+    margin: 0 0 1em 1.5em;
+    top: 0.25em;
+  }
 }
 
-.generic-page-content-container h1 {
-  color: white;
-  font-size: 2.75em;
-  width: 100%;
-  margin: 1px;
-}
-.generic-page-content-container h1::after {
-  padding: 1px;
-  margin-top: 25px;
-  display: flex;
-  content: "";
-  background: linear-gradient(to right, #5e42a6, #b74e91);
-  margin-bottom:  1.3em;
-}
+@media (min-width: 421px) {
+  .generic-page-content-container {
+    display: flex;
+    flex-grow: 1;
+    background-color: #312450;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.55);
+  }
 
-.generic-page-content {
-  display: flex;
-  flex-direction: column;
-  margin-left: 15em;
-  margin-right: 15em;
-  margin-top: 5em;
-  width: 100%;
-  line-height: 28px;
-}
+  .generic-page-content-container h1 {
+    color: white;
+    font-size: 2.75em;
+    width: 100%;
+    margin: 1px;
+  }
+  .generic-page-content-container h1::after {
+    padding: 1px;
+    margin-top: 25px;
+    display: flex;
+    content: "";
+    background: linear-gradient(to right, #5e42a6, #b74e91);
+    margin-bottom:  1.3em;
+  }
 
-.image-container {
-  background: lightgreen;
-  padding: 1px;
-  height: 30em;
-  border-radius: 0.2em;
-}
+  .generic-page-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: 5em;
+    width: 100%;
+    line-height: 28px;
+  }
 
-.image.left {
-  float: left;
-  margin: 0 1.5em 1em 0;
-  top: 0.25em;
-}
+  .image-container {
+    background: lightgreen;
+    padding: 1px;
+    height: 30em;
+    border-radius: 0.2em;
+  }
 
-.image.right {
-  float: right;
-  margin: 0 0 1em 1.5em;
-  top: 0.25em;
+  .image.left {
+    float: left;
+    margin: 0 1.5em 1em 0;
+    top: 0.25em;
+  }
+
+  .image.right {
+    float: right;
+    margin: 0 0 1em 1.5em;
+    top: 0.25em;
+  }
 }

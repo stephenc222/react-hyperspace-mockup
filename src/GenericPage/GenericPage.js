@@ -14,7 +14,7 @@ const getHeaderLinks = (history) => {
 const GenericPage = ({ history }) => {
   return (
     <div className='generic-page-container'>
-      <Header headerLinks={getHeaderLinks(history)} />
+      <Header headerLinks={getHeaderLinks(history)} history={history} />
       <Content />
       <Footer style={{ background: '#261c3e', color: 'rgba(255, 255, 255, 0.15)' }} />
     </div>
