@@ -46,7 +46,6 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    height: 100%;
     flex: 1;
     color: white;
   }
@@ -59,11 +58,13 @@
     background-color: #5052b5;
   }
   .sub-section-image {
-    flex: 1;
+    border: 1px solid red;
+    height: 20em;
+    width: 20em;
     background-color: limegreen;
   }
   .sub-section-text-content{
-    flex: 2;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
