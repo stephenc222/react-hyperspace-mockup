@@ -13,3 +13,9 @@
   margin: 0 0 1em 1.5em;
   top: 0.25em;
 }
+
+img {
+  border-radius: 0.25em;
+  width: 100%;
+  height: auto;
+}

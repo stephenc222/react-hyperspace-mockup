@@ -33,8 +33,6 @@
   }
 
   .image-container {
-    background: lightgreen;
-    padding: 1px;
     height: 7.5em;
     border-radius: 0.2em;
   }
@@ -57,7 +55,8 @@
     display: flex;
     flex-grow: 1;
     background-color: #312450;
-    width: 100%;
+    margin-left: 10em;
+    margin-right: 10em;
     color: rgba(255, 255, 255, 0.55);
   }
 
@@ -87,8 +86,6 @@
   }
 
   .image-container {
-    background: lightgreen;
-    padding: 1px;
     height: 30em;
     border-radius: 0.2em;
   }
