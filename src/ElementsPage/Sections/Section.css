@@ -1,4 +1,10 @@
 @media (max-width: 420px) {
+  blockquote {
+    border-left: solid 4px rgba(255, 255, 255, 0.15);
+    font-style: italic;
+    margin: 0 0 2em 0;
+    padding: 0.5em 0 0.5em 2em;
+  }
   ol {
     list-style: decimal;
     margin: 0 0 2em 0;
@@ -34,7 +40,7 @@
     background-color: lightblue;
     height: 8em;
     border-radius: 0.2em;
-    margin: 1em;
+    /* margin: 1em; */
   }
   .section-container {
     display: flex;
@@ -128,6 +134,12 @@
   }
 } 
 @media (min-width: 421px) {
+  blockquote {
+    border-left: solid 4px rgba(255, 255, 255, 0.15);
+    font-style: italic;
+    margin: 0 0 2em 0;
+    padding: 0.5em 0 0.5em 2em;
+  }
   /* IMAGE SECTION */
   .image-fit-container {
     display: flex;
