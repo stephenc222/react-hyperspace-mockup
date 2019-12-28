@@ -6,21 +6,27 @@ const ImageSection = () => {
   return (
     <Section header='Image'>
       <h3>Fit</h3>
-      <div className='image-container' />
-      <div style={{ display: 'flex', flexDirection: 'row', paddingTop: 20, flexShrink: 1, justifyContent: 'space-between' }}>
-        <div style={{ height: '22em', width: '22em' }} className='image-container' />
-        <div style={{ height: '22em', width: '22em' }} className='image-container' />
-        <div style={{ height: '22em', width: '22em' }} className='image-container' />
+      <div className='image-fit-container' />
+      <div style={{ display: 'flex', flexDirection: 'row', paddingTop: 20, flexGrow: 1 }}>
+        <div className='image-fit-container' />
+        <span style={{ padding: '1em' }} />
+        <div className='image-fit-container' />
+        <span style={{ padding: '1em' }} />
+        <div className='image-fit-container' />
       </div>
-      <div style={{ display: 'flex', flexDirection: 'row', paddingTop: 20, flexShrink: 1, justifyContent: 'space-between' }}>
-        <div style={{ height: '22em', width: '22em' }} className='image-container' />
-        <div style={{ height: '22em', width: '22em' }} className='image-container' />
-        <div style={{ height: '22em', width: '22em' }} className='image-container' />
+      <div style={{ display: 'flex', flexDirection: 'row', paddingTop: 20 }}>
+        <div className='image-fit-container' />
+        <span style={{ padding: '1em' }} />
+        <div className='image-fit-container' />
+        <span style={{ padding: '1em' }} />
+        <div className='image-fit-container' />
       </div>
-      <div style={{ display: 'flex', flexDirection: 'row', paddingTop: 20, flexShrink: 1, justifyContent: 'space-between' }}>
-        <div style={{ height: '22em', width: '22em' }} className='image-container' />
-        <div style={{ height: '22em', width: '22em' }} className='image-container' />
-        <div style={{ height: '22em', width: '22em' }} className='image-container' />
+      <div style={{ display: 'flex', flexDirection: 'row', paddingTop: 20 }}>
+        <div className='image-fit-container' />
+        <span style={{ padding: '1em' }} />
+        <div className='image-fit-container' />
+        <span style={{ padding: '1em' }} />
+        <div className='image-fit-container' />
       </div>
       <h3>Left & Right</h3>
       <p>

@@ -23,8 +23,7 @@ const Content = () => {
         <TableSection />
         <ButtonsSection />
         <FormSection />
-        {/* FIXME: these sections are consistently "too wide", which causes x-axis overflow undesirably */}
-        {/* <ImageSection /> */}
+        <ImageSection />
       </div>
     </div>
   )
