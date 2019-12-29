@@ -3,15 +3,12 @@ import './Checkbox.css'
 
 const Checkbox = ({ label, onChange, checked, value }) => {
   return (
-    <div className='checkbox-container'>
-      <div className='checkbox-content'>
-        <label className='checkbox-label'>{label}</label>
-        <input
-          type="checkbox"
-          value={value}
-          checked={checked}
-          onChange={() => onChange(!checked)}
-        />
+    <div className='input-checkbox-container'>
+      <div className='input-checkbox-content'>
+        <label class="input-container">{label}
+          <input onChange={() => onChange(!checked)} type="checkbox" checked={checked} value={value} />
+          <div class="input-checkmark"></div>
+        </label>
       </div>
     </div>
   )

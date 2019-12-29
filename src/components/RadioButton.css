@@ -1,15 +1,88 @@
-.radio-button-container {
+.input-radio-button-container {
   display: flex;
   align-items: center;
   flex-grow: 1;
 }
 
-.radio-button-content {
+.input-radio-button-content {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
 }
 
-.radio-button-label {
+.input-radio-button-label {
   padding: 1em;
+}
+
+/* The container */
+.input-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio-button */
+.input-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio-button */
+.input-radio-button {
+  position: absolute;
+  top: 0.25em;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* On mouse-over, add a grey background color */
+.input-container:hover input ~ .input-radio-button {
+  border-radius: 50%;
+}
+
+/* When the radio-button is checked, add a blue background */
+.input-container input:checked ~ .input-radio-button {
+  border-radius: 0.25em;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 50%;
+  background-color: white;
+}
+
+/* Create the radio-button/indicator (hidden when not checked) */
+.input-radio-button:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the radio-button when checked */
+.input-container input:checked ~ .input-radio-button:after {
+  display: block;
+}
+
+/* Style the radio-button/indicator */
+.input-container .input-radio-button:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #b74e91;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
