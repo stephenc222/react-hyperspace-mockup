@@ -5,8 +5,6 @@ const CompanyName = ({ history }) => <div onClick={() => history.push('/')} clas
 
 const HeaderLinkItem = (props) => {
   const { label, path, history } = props
-  console.log({ props })
-  console.log({ historyPathName: history.location.pathname, path })
   const isActive = history.location.pathname === path
   return (
     <div className='header-link-item-container' onClick={() => history.push(path)}>

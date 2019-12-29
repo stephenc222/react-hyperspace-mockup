@@ -34,12 +34,14 @@
     display: flex;
     color: rgba(255, 255, 255, 0.35);
     padding-right: 2em;
+    cursor: pointer;
   }
 
   .header-link-item-content--active {
     display: flex;
     color: white;
     padding-right: 2em;
+    cursor: pointer;
   }
 
   .header-link-item-content:hover {
