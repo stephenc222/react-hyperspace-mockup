@@ -6,14 +6,22 @@
     flex-grow: 1;
     flex: 1;
     color: white;
+    background-color: #5052b5;
   }
   .sub-section-container {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    border-bottom: 0.1px solid darkblue;
-    background-color: #5052b5;
   }
+
+  .sub-section-container:nth-child(2) {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .sub-section-container:nth-child(3) {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
   .sub-section-image {
     flex: 1;
     background-color: limegreen;
@@ -48,14 +56,21 @@
     flex-grow: 1;
     flex: 1;
     color: white;
+    background-color: #5052b5;
   }
   .sub-section-container {
     display: flex;
     flex: 1;
     flex-direction: row;
     flex-grow: 1;
-    border-bottom: 0.1px solid darkblue;
-    background-color: #5052b5;
+  }
+
+  .sub-section-container:nth-child(2) {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .sub-section-container:nth-child(3) {
+    background-color: rgba(0, 0, 0, 0.1);
   }
   .sub-section-image {
     border: 1px solid red;
