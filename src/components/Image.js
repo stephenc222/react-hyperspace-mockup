@@ -9,6 +9,7 @@ const Image = ({ filename, className, containerStyle, imgStyle }) => {
       className={`${className} base-image-container`}
     >
       <img
+        alt={`${filename || 'an image'}`}
         style={{
           width: '100%',
           height: 'auto',

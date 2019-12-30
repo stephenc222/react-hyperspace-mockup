@@ -12,7 +12,7 @@ const renderOptions = (options, selected, placeholder, formatOption) => {
       key={`op_${index}`}
       value={optionVal}
     >
-      {formatOption && formatOption(optionVal) || optionVal}
+      {formatOption && typeof formatOption === 'function' ? formatOption(optionVal) : optionVal}
     </option>
   )
 }

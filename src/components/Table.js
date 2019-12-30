@@ -38,7 +38,10 @@ const TableBody = ({ columns, data }) => {
 }
 
 const TableFooter = ({ summaryValue, formatSummaryData }) => {
-  const formattedSummaryData = formatSummaryData && formatSummaryData(summaryValue) || summaryValue
+  const formattedSummaryData =
+    formatSummaryData && typeof formatSummaryData === 'function'
+      ? formatSummaryData(summaryValue)
+      : summaryValue
   return (
     <tfoot>
       <tr>

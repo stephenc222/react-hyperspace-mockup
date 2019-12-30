@@ -24,7 +24,7 @@ const WHO_WE_ARE_SECTIONS = [
 const SubSectionItem = ({ headerLabel, bodyText, onClick, imageFile }) => {
   return (
     <div className='sub-section-container'>
-      <Image filename={imageFile} />
+      <Image imgStyle={{ borderRadius: 0 }} filename={imageFile} />
       <div className='sub-section-text-content'>
         <h2>{headerLabel}</h2>
         <p>{bodyText}</p>
@@ -37,7 +37,7 @@ const SubSectionItem = ({ headerLabel, bodyText, onClick, imageFile }) => {
 const WhoWeAreSection = ({ onClick = () => { } }) => {
   return (
     <div className='who-we-are-section-container'>
-      {WHO_WE_ARE_SECTIONS.map((sectionProp) => <SubSectionItem {...sectionProp} onClick={onClick} />)}
+      {WHO_WE_ARE_SECTIONS.map((sectionProp, index) => <SubSectionItem key={`ssi_${index}`} {...sectionProp} onClick={onClick} />)}
     </div>
   )
 }

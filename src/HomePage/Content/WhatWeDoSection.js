@@ -30,7 +30,7 @@ const ListRow = ({ row = [] }) => {
   return (
     <div className='row'>
       {
-        row.map(item => <ListItem {...item} />)
+        row.map((item, index) => <ListItem key={`lir_${index}`} {...item} />)
       }
     </div>
   )
@@ -81,7 +81,7 @@ const WhatWeDoSection = ({ onClick }) => {
       <div className='what-we-do-content-container'>
         {WHAT_WE_DO_LIST.map((rowItem, index) => {
           return (
-            <ListRow {...rowItem} />
+            <ListRow key={`lr_${index}`} {...rowItem} />
           )
         })}
       </div>

@@ -2,7 +2,7 @@ function importAll(r) {
   return r.keys().map(r)
 }
 
-const test = /(?:^.*[\\\/])([^.]+)(?:\..+)$/
+const test = /(?:^.*[\\/])([^.]+)(?:\..+)$/
 const getImageKeyName = (filename) => filename.match(test)[1]
 
 const ImageUtil = {

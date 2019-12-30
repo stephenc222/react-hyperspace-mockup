@@ -13,10 +13,10 @@ const HeaderLinkItem = (props) => {
   )
 }
 
-const HeaderLinks = ({ headerLinks }) => {
+const HeaderLinks = ({ headerLinks, history }) => {
   return (
     <div className='header-links-container'>
-      {headerLinks.map((linkItem, index) => <HeaderLinkItem key={`hli_${index}`} {...linkItem} />)}
+      {headerLinks.map((linkItem, index) => <HeaderLinkItem key={`hli_${index}`} {...linkItem} history={history} />)}
     </div>
   )
 }
@@ -26,7 +26,7 @@ const Header = ({ history, headerLinks = [] }) => {
     <div className='header-container'>
       <div className='header-content'>
         <CompanyName history={history} />
-        <HeaderLinks headerLinks={headerLinks} />
+        <HeaderLinks history={history} headerLinks={headerLinks} />
       </div>
     </div>
   )
