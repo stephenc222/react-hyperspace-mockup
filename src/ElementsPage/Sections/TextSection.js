@@ -18,7 +18,7 @@ const codeText = `
 const TextSection = () => {
   return (
     <Section header='Text'>
-      <div>
+      <div style={{ display: 'flex', flexDirection: 'column' }}>
         <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
 									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
 									This is <u>underlined</u> and this is code: <code>{`for (;;) {... }`}</code>. Finally, <DottedLink text='this is a link' />.</p>
