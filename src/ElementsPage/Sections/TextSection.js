@@ -3,15 +3,15 @@ import Section from './Section'
 import DottedLink from '../../components/DottedLink'
 
 const codeText = `
-              i = 0;
+  i = 0;
 
-          while (!deck.isInOrder()) {
-              print 'Iteration ' + i;
-          deck.shuffle();
-          i++;
-        }
+  while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+  }
 
-        print 'It took ' + i + ' iterations to sort the deck.';
+  print 'It took ' + i + ' iterations to sort the deck.';
           
 `
 
@@ -33,10 +33,7 @@ const TextSection = () => {
         <blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
         <h3>Preformatted</h3>
         <pre>
-          <code>
-            TODO
-            {/* <>{codeText}</> */}
-          </code>
+          {codeText}
         </pre>
       </div>
     </Section>
