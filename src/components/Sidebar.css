@@ -1,3 +1,8 @@
+@keyframes activeUnderlineGrow {
+  0% {  left: 100%; }
+  100% { left: 0%}
+}
+
 /* This is "20%", the content is "80%" */
 @media (max-width: 420px) {
   .sidebar-container {
@@ -8,19 +13,19 @@
 @media (min-width: 421px) and (max-width: 869px) {
   .sidebar-container {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
+    justify-self: center;
+    align-self: center;
+    width: 85%;
     background-color: #312450;
-    flex-shrink: 1;
   }
 
   .sidebar-container--content {
     display: flex;
     width: 100%;
+    margin-left: 1em;
+    margin-right: 1em;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
   }
@@ -30,29 +35,25 @@
   }
 
   .sidebar-item-content {
-    text-align: right;
+    text-align: center;
     display: flex;
     color: rgba(255, 255, 255, 0.35);
     flex-direction: column;
-    text-align: right;
-    padding: 1.35em 0;
+    text-align: center;
     font-size: 0.6em;
     letter-spacing: 0.25em;
     font-weight: bold;
-    padding-left: 2em;
   }
 
   .sidebar-item-content--active {
-    text-align: right;
     display: flex;
     color: rgba(255, 255, 255, 1);
     flex-direction: column;
-    text-align: right;
-    padding: 1.35em 0;
+    text-align: center;
+    margin-bottom: 3em;
     font-size: 0.6em;
     letter-spacing: 0.25em;
     font-weight: bold;
-    padding-left: 2em;
   }
 
   .sidebar-item-content:hover {
@@ -63,11 +64,18 @@
     flex-direction: column;
   }
   .sidebar-item-container {
+    overflow: hidden;
     display: flex;
-    /* flex-grow: 1; */
-    text-align: right;
+    width: 80%;
+    text-align: center;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    padding-top: 1em;
+    cursor: pointer;
+    text-align: center;
     flex-direction: column;
-    padding: 0.02em;
+    border-radius: 0.2em;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
     cursor: pointer;
   }
 
@@ -75,15 +83,20 @@
     then will shrink to disappear, left to right if was active
   */
   .sidebar-item-underline {
-    padding-bottom: 2px;
-    border-radius: 0.2em;
-    margin-left: 2em;
-    background: rgba(255, 255, 255, 0.05);
+    margin-bottom: 2px;
   }
   .sidebar-item-underline--active {
+    z-index: 2;
+    width: 100%;
+    max-width: 8em;
+    position: relative;
+    top: 0%;
+    left: 0%;
     background: linear-gradient(to right, #5e42a6, #b74e91);
+    animation-name: activeUnderlineGrow;
+    animation-duration: 0.2s;
+    animation-fill-mode: normal;
     padding-bottom: 2px;
-    margin-left: 1em;
     border-radius: 0.2em;
   }
 }
@@ -146,26 +159,37 @@
     flex-direction: column;
   }
   .sidebar-item-container {
+    overflow: hidden;
     display: flex;
     width: 100%;
-    padding-left: 10px;
+    margin-left: 10px;
     flex-grow: 1;
     text-align: right;
     flex-direction: column;
-    padding: 12.5px;
+    padding-top: 12.5px;
+    border-radius: 0.2em;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 12.5px;
     cursor: pointer;
   }
 
   /* will include an animation "grow" from right to left 
     then will shrink to disappear, left to right if was active
   */
+
   .sidebar-item-underline {
-    padding-bottom: 2px;
-    border-radius: 0.2em;
-    background: rgba(255, 255, 255, 0.05);
+    margin-bottom: 2px;
   }
   .sidebar-item-underline--active {
+    z-index: 2;
+    width: 100%;
+    position: relative;
+    top: 0%;
+    left: 0%;
     background: linear-gradient(to right, #5e42a6, #b74e91);
+    animation-name: activeUnderlineGrow;
+    animation-duration: 0.2s;
+    animation-fill-mode: normal;
     padding-bottom: 2px;
     border-radius: 0.2em;
   }
