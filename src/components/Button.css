@@ -14,6 +14,10 @@
   font-weight: bold;
   max-width: 105px;
   max-height: 5em;
+  /* TODO: perhaps add an :after pseudo element, scaled to 25%, 
+  centered, then grow to 100% to better match mockup hover animation 
+  */
+  transition: background-color 0.2s ease-out, border 0.2s ease-out;
 }
 
 /* For buttons. Don't judge me... yet */
