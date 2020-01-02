@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Content from './Content/Content'
 import Sidebar from '../components/Sidebar'
 import './HomePage.css'
-import { AutoScrollContext } from '../utils/AutoScroll'
 
 // FIXME: quick hack to create links for this static "marketing" like template
 const getSidebarLinks = () => {
@@ -18,16 +17,14 @@ const getSidebarLinks = () => {
 const HomePage = ({ history }) => {
   const [activeSection, onActiveSectionChange] = useState('welcomeSection')
   return (
-    <AutoScrollContext>
-      <div className='home-page-container'>
-        <Sidebar onActiveSectionChange={onActiveSectionChange} activeSection={activeSection} sidebarLinks={getSidebarLinks()} />
-        <Content
-          activeSection={activeSection}
-          onActiveSectionChange={onActiveSectionChange}
-          history={history}
-        />
-      </div>
-    </AutoScrollContext>
+    <div className='home-page-container'>
+      <Sidebar onActiveSectionChange={onActiveSectionChange} activeSection={activeSection} sidebarLinks={getSidebarLinks()} />
+      <Content
+        activeSection={activeSection}
+        onActiveSectionChange={onActiveSectionChange}
+        history={history}
+      />
+    </div>
   )
 }
 

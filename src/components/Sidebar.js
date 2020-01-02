@@ -1,10 +1,13 @@
 import React from 'react'
 import './Sidebar.css'
-import { AutoScrollController } from '../utils/AutoScroll'
+import { onControllScroll, getControllerRef } from '../utils/AutoScroll'
 
 const SidebarItem = ({ label, activeSection, sectionName, onActiveSectionChange }) => {
   return (
-    <div className='sidebar-item-container' onClick={() => onActiveSectionChange(sectionName)} >
+    <div className='sidebar-item-container' onClick={() => {
+      onControllScroll(sectionName)
+      onActiveSectionChange(sectionName)
+    }} >
       <div className={`sidebar-item-content${activeSection === sectionName ? '--active' : ''}`}>{label}</div>
       <div className={`sidebar-item-underline${activeSection === sectionName ? '--active' : ''}`} />
     </div>
@@ -12,22 +15,19 @@ const SidebarItem = ({ label, activeSection, sectionName, onActiveSectionChange 
 }
 
 const Sidebar = (props) => {
-  console.log('fuck', { props })
   const { sidebarLinks, activeSection, onActiveSectionChange } = props
   return (
-    <AutoScrollController controllerId='sidebar'>
-      <div className='sidebar-container'>
-        <div className='sidebar-container--content'>
-          {sidebarLinks.map((item, index) =>
-            <SidebarItem
-              onActiveSectionChange={onActiveSectionChange}
-              activeSection={activeSection}
-              key={`si_${index}`}
-              {...item}
-            />)}
-        </div>
+    <div ref={ref => getControllerRef({ ref, id: 'sidebar' })} className='sidebar-container'>
+      <div className='sidebar-container--content'>
+        {sidebarLinks.map((item, index) =>
+          <SidebarItem
+            onActiveSectionChange={onActiveSectionChange}
+            activeSection={activeSection}
+            key={`si_${index}`}
+            {...item}
+          />)}
       </div>
-    </AutoScrollController>
+    </div>
   )
 }
 

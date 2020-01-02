@@ -1,6 +1,7 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Button from '../../components/Button'
+import { getTargetRef } from '../../utils/AutoScroll'
 import './WhatWeDoSection.css'
 
 
@@ -72,13 +73,8 @@ const ListItem = (props) => {
 }
 
 const WhatWeDoSection = ({ onClick }) => {
-  const anyRef = useRef(null)
-  window.setTimeout(() => {
-    anyRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
-  }, 2500)
-
   return (
-    <div ref={anyRef} className='what-we-do-container'>
+    <div ref={(ref) => getTargetRef({ ref, id: 'whatWeDoSection' })} className='what-we-do-container'>
       <h2>What we do</h2>
       <p>
         Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.

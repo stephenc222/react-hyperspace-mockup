@@ -1,12 +1,13 @@
 import React from 'react'
 import Button from '../../components/Button'
 import DottedLink from '../../components/DottedLink'
+import { getTargetRef } from '../../utils/AutoScroll'
 import './WelcomeSection.css'
 
 
 const WelcomeSection = () => {
   return (
-    <div className='welcome-section-container'>
+    <div ref={ref => getTargetRef({ ref, id: 'welcomeSection' })} className='welcome-section-container'>
       <h1>Hyperspace</h1>
       <p>
         Just another fine responsive site template designed by <DottedLink text='HTML5 UP' href={'http://html5up.net/'} /><br />
