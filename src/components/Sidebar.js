@@ -1,5 +1,6 @@
 import React from 'react'
 import './Sidebar.css'
+import { AutoScrollController } from '../utils/AutoScroll'
 
 const SidebarItem = ({ label, activeSection, sectionName, onActiveSectionChange }) => {
   return (
@@ -11,19 +12,22 @@ const SidebarItem = ({ label, activeSection, sectionName, onActiveSectionChange 
 }
 
 const Sidebar = (props) => {
+  console.log('fuck', { props })
   const { sidebarLinks, activeSection, onActiveSectionChange } = props
   return (
-    <div className='sidebar-container'>
-      <div className='sidebar-container--content'>
-        {sidebarLinks.map((item, index) =>
-          <SidebarItem
-            onActiveSectionChange={onActiveSectionChange}
-            activeSection={activeSection}
-            key={`si_${index}`}
-            {...item}
-          />)}
+    <AutoScrollController controllerId='sidebar'>
+      <div className='sidebar-container'>
+        <div className='sidebar-container--content'>
+          {sidebarLinks.map((item, index) =>
+            <SidebarItem
+              onActiveSectionChange={onActiveSectionChange}
+              activeSection={activeSection}
+              key={`si_${index}`}
+              {...item}
+            />)}
+        </div>
       </div>
-    </div>
+    </AutoScrollController>
   )
 }
 
