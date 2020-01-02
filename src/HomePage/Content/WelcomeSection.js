@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from '../../components/Button'
 import DottedLink from '../../components/DottedLink'
-import { getTargetRef } from '../../utils/AutoScroll'
+import { getTargetRef, onControllScroll } from '../../utils/AutoScroll'
 import './WelcomeSection.css'
 
 
@@ -13,7 +13,7 @@ const WelcomeSection = () => {
         Just another fine responsive site template designed by <DottedLink text='HTML5 UP' href={'http://html5up.net/'} /><br />
         &nbsp;and released for free under the <DottedLink text='Creative Commons' href={'http://html5up.net/license'} />.
         </p>
-      <Button label='Learn More' />
+      <Button onClick={() => onControllScroll('whoWeAreSection')} label='Learn More' />
     </div>
   )
 }
