@@ -5,10 +5,11 @@ import WhatWeDoSection from './WhatWeDoSection'
 import ContactSection from './ContactSection'
 import Footer from '../../components/Footer'
 import './Content.css'
+import { onTargetScroll } from '../../utils/AutoScroll'
 
 const Content = ({ history }) => {
   return (
-    <div className='home-page-content-container'>
+    <div onScroll={onTargetScroll} className='home-page-content-container'>
       <div className='home-page-content-container-content'>
         <WelcomeSection history={history} />
         <WhoWeAreSection onClick={() => history.push('/generic')} />

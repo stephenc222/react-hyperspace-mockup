@@ -1,3 +1,6 @@
+import findNearestElement from './findNearestElement'
+import eventController from './eventController'
+
 const controllerRefArr = []
 const targetRefArr = []
 
@@ -15,8 +18,23 @@ const addTargetRef = ({ ref, id }) => {
   !targetRefArr.find(refItem => refItem.id === id) && targetRefArr.push({ targetRef: ref, id })
 }
 
+const onTargetScroll = e => {
+  const { scrollTop } = e.target
+  const targetCoordsArr = targetRefArr.map(({ targetRef, id }) => {
+    const { offsetTop } = targetRef
+    return {
+      id,
+      offsetTop,
+    }
+  })
+  const [nearestTarget] = findNearestElement(targetCoordsArr, scrollTop)
+  if (nearestTarget && nearestTarget.id) {
+    eventController.dispatch('SCROLLED_TO_TARGET', { verbose: false, args: [{ passedToListener: true, targetId: nearestTarget.id }] })
+  }
+}
 export {
   addControllerRef,
   addTargetRef,
-  onControlScroll
+  onControlScroll,
+  onTargetScroll
 }
