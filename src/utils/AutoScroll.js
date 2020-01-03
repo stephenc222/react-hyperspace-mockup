@@ -1,25 +1,22 @@
-const _controllerRefArr = []
-const _targetRefArr = []
+const controllerRefArr = []
+const targetRefArr = []
 
 // control scroll here
-const onControllScroll = (id) => {
-  const targetRef = _targetRefArr.find(refItem => refItem.id === id).targetRef
+const onControlScroll = (id) => {
+  const targetRef = targetRefArr.find(refItem => refItem.id === id).targetRef
   targetRef.scrollIntoView({ behavior: 'smooth', block: 'start' })
 }
 
-const _useControllerRef = ({ ref, id }) => {
-  !_controllerRefArr.find(refItem => refItem.id === id) && _controllerRefArr.push({ controllerRef: ref, id })
+const addControllerRef = ({ ref, id }) => {
+  !controllerRefArr.find(refItem => refItem.id === id) && controllerRefArr.push({ controllerRef: ref, id })
 }
 
-const _useTargetRef = ({ ref, id }) => {
-  !_targetRefArr.find(refItem => refItem.id === id) && _targetRefArr.push({ targetRef: ref, id })
+const addTargetRef = ({ ref, id }) => {
+  !targetRefArr.find(refItem => refItem.id === id) && targetRefArr.push({ targetRef: ref, id })
 }
-
-const getControllerRef = ({ ref, id }) => _useControllerRef({ ref, id })
-const getTargetRef = ({ ref, id }) => _useTargetRef({ ref, id })
 
 export {
-  getControllerRef,
-  getTargetRef,
-  onControllScroll
+  addControllerRef,
+  addTargetRef,
+  onControlScroll
 }

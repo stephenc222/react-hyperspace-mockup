@@ -1,11 +1,11 @@
 import React from 'react'
 import './Sidebar.css'
-import { onControllScroll, getControllerRef } from '../utils/AutoScroll'
+import { onControlScroll, addControllerRef } from '../utils/AutoScroll'
 
 const SidebarItem = ({ label, activeSection, sectionName, onActiveSectionChange }) => {
   return (
     <div className='sidebar-item-container' onClick={() => {
-      onControllScroll(sectionName)
+      onControlScroll(sectionName)
       onActiveSectionChange(sectionName)
     }} >
       <div className={`sidebar-item-content${activeSection === sectionName ? '--active' : ''}`}>{label}</div>
@@ -17,7 +17,7 @@ const SidebarItem = ({ label, activeSection, sectionName, onActiveSectionChange 
 const Sidebar = (props) => {
   const { sidebarLinks, activeSection, onActiveSectionChange } = props
   return (
-    <div ref={ref => getControllerRef({ ref, id: 'sidebar' })} className='sidebar-container'>
+    <div ref={ref => addControllerRef({ ref, id: 'sidebar' })} className='sidebar-container'>
       <div className='sidebar-container--content'>
         {sidebarLinks.map((item, index) =>
           <SidebarItem
