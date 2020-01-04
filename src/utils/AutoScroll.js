@@ -1,32 +1,34 @@
 import findNearestElement from './findNearestElement'
 import eventController from './eventController'
 
-const controllerRefArr = []
-const targetRefArr = []
+const targetRefTable = {}
 
 // control scroll here
 const onControlScroll = (id) => {
-  const targetRef = targetRefArr.find(refItem => refItem.id === id).targetRef
-  targetRef.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  const targetRef = id in targetRefTable ? targetRefTable[id].targetRef : null
+  targetRef && targetRef.scrollIntoView({ behavior: 'smooth', block: 'start' })
 }
 
 const addControllerRef = ({ ref, id }) => {
-  !controllerRefArr.find(refItem => refItem.id === id) && controllerRefArr.push({ controllerRef: ref, id })
+  targetRefTable[id] = { controllerRef: ref, id }
 }
 
 const addTargetRef = ({ ref, id }) => {
-  !targetRefArr.find(refItem => refItem.id === id) && targetRefArr.push({ targetRef: ref, id })
+  targetRefTable[id] = { targetRef: ref, id }
 }
 
 const onTargetScroll = e => {
   const { scrollTop } = e.target
-  const targetCoordsArr = targetRefArr.map(({ targetRef, id }) => {
-    const { offsetTop } = targetRef
-    return {
-      id,
-      offsetTop,
-    }
-  })
+  const targetCoordsArr = Object.keys(targetRefTable)
+    .map(id => ({ id, targetRef: targetRefTable[id].targetRef }))
+    .filter(({ targetRef }) => !!targetRef)
+    .map(({ targetRef, id }) => {
+      const { offsetTop } = targetRef
+      return {
+        id,
+        offsetTop,
+      }
+    })
   const [nearestTarget] = findNearestElement(targetCoordsArr, scrollTop)
   if (nearestTarget && nearestTarget.id) {
     eventController.dispatch('SCROLLED_TO_TARGET', { verbose: false, args: [{ passedToListener: true, targetId: nearestTarget.id }] })
