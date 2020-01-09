@@ -7,12 +7,11 @@
   background: transparent;
   color: white;
   border-radius: 3em;
-  padding: 0 3.75em;
+  padding: 2em 2em;
   letter-spacing: 0.25em;
-  line-height: 4.75em;
   font-size: 0.6em;
   font-weight: bold;
-  max-width: 105px;
+  max-width: 145px;
   max-height: 5em;
   /* TODO: perhaps add an :after pseudo element, scaled to 25%, 
   centered, then grow to 100% to better match mockup hover animation 
