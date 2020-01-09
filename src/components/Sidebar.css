@@ -106,9 +106,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
+    width: 18.5%;
     background-color: #312450;
-    flex: 1;
   }
 
   .sidebar-container--content {
