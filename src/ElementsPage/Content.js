@@ -12,11 +12,9 @@ const Content = () => {
   return (
     <div className='elements-page-content-container'>
       <div className='elements-page-content'>
-        <div>
-          <h1>
-            Elements
-          </h1>
-        </div>
+        <h1>
+          Elements
+        </h1>
         <TextSection />
         <ListSection />
         <ActionsSection />

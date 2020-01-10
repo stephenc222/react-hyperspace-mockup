@@ -29,8 +29,6 @@
     display: flex;
     flex-direction: column;
     margin-top: 5em;
-    /* margin-left: 1em;
-    margin-right: 1em; */
     width: 100%;
     line-height: 28px;
   }
@@ -44,16 +42,13 @@
 @media (min-width: 421px) {
   .elements-page-content-container {
     display: flex;
-    /* flex-grow: 1; */
     background-color: #312450;
-    /* width: 100%; */
     color: rgba(255, 255, 255, 0.55);
   }
 
   .elements-page-content-container h1 {
     color: white;
     font-size: 2.75em;
-    /* width: 100%; */
     margin: 1px;
   }
   .elements-page-content-container h1::after {
