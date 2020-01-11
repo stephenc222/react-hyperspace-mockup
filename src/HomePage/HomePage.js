@@ -4,21 +4,19 @@ import Sidebar from '../components/Sidebar'
 import './HomePage.css'
 
 // FIXME: quick hack to create links for this static "marketing" like template
-const getSidebarLinks = () => {
-  return [
-    { label: 'Welcome', sectionName: 'welcomeSection' },
-    { label: 'Who We Are', sectionName: 'whoWeAreSection' },
-    { label: 'What We Do', sectionName: 'whatWeDoSection' },
-    { label: 'Get In Touch', sectionName: 'getInTouchSection' },
-  ]
-}
+const SIDEBAR_LINKS = [
+  { label: 'Welcome', sectionName: 'welcomeSection' },
+  { label: 'Who We Are', sectionName: 'whoWeAreSection' },
+  { label: 'What We Do', sectionName: 'whatWeDoSection' },
+  { label: 'Get In Touch', sectionName: 'getInTouchSection' },
+]
 
 // HomePage will manage state of animation of it's content
 const HomePage = ({ history }) => {
   const [activeSection, onActiveSectionChange] = useState('welcomeSection')
   return (
     <div className='home-page-container'>
-      <Sidebar onActiveSectionChange={onActiveSectionChange} activeSection={activeSection} sidebarLinks={getSidebarLinks()} />
+      <Sidebar onActiveSectionChange={onActiveSectionChange} activeSection={activeSection} sidebarLinks={SIDEBAR_LINKS} />
       <Content
         activeSection={activeSection}
         onActiveSectionChange={onActiveSectionChange}

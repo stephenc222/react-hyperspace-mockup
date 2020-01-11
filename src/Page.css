@@ -1,5 +1,5 @@
 @media (max-width: 420px) {
-  .generic-page-content-container {
+  .page-content-container {
     display: flex;
     flex-grow: 1;
     background-color: #312450;
@@ -7,13 +7,13 @@
     color: rgba(255, 255, 255, 0.55);
   }
 
-  .generic-page-content-container h1 {
+  .page-content-container h1 {
     color: white;
     font-size: 2em;
     width: 100%;
     margin: 1px;
   }
-  .generic-page-content-container h1::after {
+  .page-content-container h1::after {
     padding: 1px;
     margin-top: 25px;
     display: flex;
@@ -22,7 +22,7 @@
     margin-bottom:  1.3em;
   }
 
-  .generic-page-content {
+  .page-content {
     display: flex;
     flex-direction: column;
     margin-left: 2em;
@@ -51,7 +51,7 @@
 }
 
 @media (min-width: 421px) {
-  .generic-page-content-container {
+  .page-content-container {
     display: flex;
     flex-grow: 1;
     background-color: #312450;
@@ -60,13 +60,12 @@
     color: rgba(255, 255, 255, 0.55);
   }
 
-  .generic-page-content-container h1 {
+  .page-content-container h1 {
     color: white;
     font-size: 2.75em;
-    width: 100%;
     margin: 1px;
   }
-  .generic-page-content-container h1::after {
+  .page-content-container h1::after {
     padding: 1px;
     margin-top: 25px;
     display: flex;
@@ -75,7 +74,7 @@
     margin-bottom:  1.3em;
   }
 
-  .generic-page-content {
+  .page-content {
     display: flex;
     flex-direction: column;
     margin-left: 5em;

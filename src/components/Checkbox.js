@@ -5,9 +5,9 @@ const Checkbox = ({ label, onChange, checked, value }) => {
   return (
     <div className='input-checkbox-container'>
       <div className='input-checkbox-content'>
-        <label class="input-container">{label}
+        <label className="input-container">{label}
           <input onChange={() => onChange(!checked)} type="checkbox" checked={checked} value={value} />
-          <div class="input-checkmark"></div>
+          <div className="input-checkmark"></div>
         </label>
       </div>
     </div>

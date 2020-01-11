@@ -1,11 +1,11 @@
 import React from 'react'
 import Image from '../components/Image'
-import './Content.css'
+import '../Page.css'
 
 const Content = () => {
   return (
-    <div className='generic-page-content-container'>
-      <div className='generic-page-content'>
+    <div className='page-content-container'>
+      <div className='page-content'>
         <h1>
           A generic Page
         </h1>

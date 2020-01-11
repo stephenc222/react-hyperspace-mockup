@@ -1,5 +1,5 @@
 import React from 'react'
-import './Header.css'
+import './SiteHeader.css'
 
 const CompanyName = ({ history }) => <div onClick={() => history.push('/')} className='header-link-company-name'>hyperspace</div>
 
@@ -21,7 +21,7 @@ const HeaderLinks = ({ headerLinks, history }) => {
   )
 }
 
-const Header = ({ history, headerLinks = [] }) => {
+const SiteHeader = ({ history, headerLinks = [] }) => {
   return (
     <div className='header-container'>
       <div className='header-content'>
@@ -32,4 +32,4 @@ const Header = ({ history, headerLinks = [] }) => {
   )
 }
 
-export default Header
+export default SiteHeader

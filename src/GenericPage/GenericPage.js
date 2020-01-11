@@ -1,20 +1,16 @@
 import React from 'react'
-import Header from '../components/Header'
+import SiteHeader from '../components/SiteHeader'
 import Content from './Content'
-import './GenericPage.css'
 import Footer from '../components/Footer'
+import siteData from '../siteData'
+import './GenericPage.css'
 
-const getHeaderLinks = (history) => {
-  return [
-    { label: 'Home', path: '/', history },
-    { label: 'Generic', path: '/generic', history },
-    { label: 'Elements', path: '/elements', history },
-  ]
-}
+const { headerLinks } = siteData
+
 const GenericPage = ({ history }) => {
   return (
     <div className='generic-page-container'>
-      <Header headerLinks={getHeaderLinks(history)} history={history} />
+      <SiteHeader headerLinks={headerLinks} history={history} />
       <Content />
       <Footer style={{ background: '#261c3e', color: 'rgba(255, 255, 255, 0.15)' }} />
     </div>
