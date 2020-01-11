@@ -1,7 +1,7 @@
 import React from 'react'
 import './List.css'
 
-const renderListItem = (item) => <li>{item}</li>
+const renderListItem = (item, index) => <li key={`li_c${index}`}>{item}</li>
 
 const List = ({ isOrdered, listData, listClassName = '' }) => {
   if (isOrdered) {

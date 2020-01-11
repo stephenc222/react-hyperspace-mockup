@@ -1,5 +1,3 @@
-/* introduce media breakpoints */
-
 @media (max-width: 869px) {
   .home-page-container {
     display: flex;
