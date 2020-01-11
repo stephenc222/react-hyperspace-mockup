@@ -1,11 +1,12 @@
 import React from 'react'
 import Image from '../../components/Image'
+import Header from '../../components/Header'
 import Section from './Section'
 
 const ImageSection = () => {
   return (
     <Section header='Image'>
-      <h3>Fit</h3>
+      <Header priority='3'>Fit</Header>
       <Image filename='hand_holding_phone_wide' />
       <div style={{ display: 'flex', flexDirection: 'row', paddingTop: 20, flexGrow: 1 }}>
         <Image filename='hand_holding_phone' />
@@ -28,7 +29,7 @@ const ImageSection = () => {
         <span style={{ padding: '1em' }} />
         <Image filename='hand_holding_phone' />
       </div>
-      <h3>Left & Right</h3>
+      <Header priority='3'>Left & Right</Header>
       <p>
         <span className="image left">
           <div style={{ height: '11em', width: '11em' }} className='image-container'>

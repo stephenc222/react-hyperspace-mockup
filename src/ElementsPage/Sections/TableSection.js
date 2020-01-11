@@ -1,6 +1,7 @@
 import React from 'react'
 import Section from './Section'
 import Table from '../../components/Table'
+import Header from '../../components/Header'
 
 const TABLE_ONE_COLUMNS = [
   { key: 'name', label: 'Name' },
@@ -21,14 +22,14 @@ const TableSection = () => {
   return (
     <Section header='Table'>
       <div className='table-section-content' >
-        <h3>Default</h3>
+        <Header priority='3'>Default</Header>
         <Table
           columns={TABLE_ONE_COLUMNS}
           data={TABLE_ONE_DATA}
           formatSummaryData={dataValue => parseInt(dataValue) && dataValue.toFixed(2)}
           summaryValue={TABLE_ONE_SUMMARY_DATA}
         />
-        <h3>Alternate</h3>
+        <Header priority='3'>Alternate</Header>
         <Table
           columns={TABLE_ONE_COLUMNS}
           data={TABLE_ONE_DATA}

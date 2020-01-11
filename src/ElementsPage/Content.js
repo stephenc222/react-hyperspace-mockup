@@ -7,13 +7,14 @@ import TableSection from './Sections/TableSection'
 import FormSection from './Sections/FormSection'
 import ImageSection from './Sections/ImageSection'
 import PageContent from '../components/PageContent'
+import Header from '../components/Header'
 
 const Content = () => {
   return (
     <PageContent>
-      <h1>
+      <Header>
         Elements
-        </h1>
+        </Header>
       <TextSection />
       <ListSection />
       <ActionsSection />

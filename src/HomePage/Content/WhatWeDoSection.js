@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Button from '../../components/Button'
+import Header from '../../components/Header'
 import { addTargetRef } from '../../utils/AutoScroll'
 import './WhatWeDoSection.css'
 
@@ -61,7 +62,7 @@ const ListItem = (props) => {
         </div>
         <div>
           <div>
-            <h3>{headerLabel}</h3>
+            <Header priority='3'>{headerLabel}</Header>
           </div>
           <div>
             <p>{bodyText}</p>
@@ -75,7 +76,7 @@ const ListItem = (props) => {
 const WhatWeDoSection = ({ onClick }) => {
   return (
     <div ref={(ref) => addTargetRef({ ref, id: 'whatWeDoSection' })} className='what-we-do-container'>
-      <h2>What we do</h2>
+      <Header priority='2'>What we do</Header>
       <p>
         Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.
       </p>

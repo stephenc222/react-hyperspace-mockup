@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Button from '../../components/Button'
 import TextInput from '../../components/TextInput'
 import TextArea from '../../components/TextArea'
+import Header from '../../components/Header'
 import { addTargetRef } from '../../utils/AutoScroll'
 import './ContactSection.css'
 
@@ -59,7 +60,7 @@ const Social = (
 const ContactSection = () => {
   return (
     <div ref={ref => addTargetRef({ ref, id: 'getInTouchSection' })} className='contact-section-container'>
-      <h2>Get in touch</h2>
+      <Header priority='2'>Get in touch</Header>
       <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.
       </p>
       <div className='contact-section-content-container'>

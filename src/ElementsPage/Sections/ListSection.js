@@ -2,6 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Section from './Section'
 import List from '../../components/List'
+import Header from '../../components/Header'
 import siteData from '../../siteData'
 
 const {
@@ -14,15 +15,15 @@ const ListSection = () => {
     <Section header='Lists'>
       <div className='list-section-content'>
         <div className='list-section-column'>
-          <h3>Unordered</h3>
+          <Header priority='3'>Unordered</Header>
           <List listData={unOrderedListData} />
-          <h3>Alternate</h3>
+          <Header priority='3'>Alternate</Header>
           <List listClassName='alt' listData={unOrderedListData} />
         </div>
         <div className='list-section-column'>
-          <h3>Ordered</h3>
+          <Header priority='3'>Ordered</Header>
           <List isOrdered listData={orderedListData} />
-          <h3>Icons</h3>
+          <Header priority='3'>Icons</Header>
           <p>
             <span className='contact-section-icon-container'>
               <FontAwesomeIcon icon={['fab', 'twitter']} />
