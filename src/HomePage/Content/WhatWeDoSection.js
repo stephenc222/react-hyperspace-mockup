@@ -3,30 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Button from '../../components/Button'
 import Header from '../../components/Header'
 import { addTargetRef } from '../../utils/AutoScroll'
+import siteData from '../../siteData'
 import './WhatWeDoSection.css'
 
-
-const WHAT_WE_DO_LIST = [
-  {
-    row: [
-
-      { icon: 'code', headerLabel: 'Lorem ipsum amet', bodyText: 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.' },
-      { icon: 'lock', headerLabel: 'Aliquam sed nullam', bodyText: 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.' },
-    ]
-  },
-  {
-    row: [
-      { icon: 'cog', headerLabel: 'Sed erat ullam corper', bodyText: 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.' },
-      { icon: 'desktop', headerLabel: 'Veroeros quis lorem', bodyText: 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.' },
-    ]
-  },
-  {
-    row: [
-      { icon: 'link', headerLabel: 'Urna quis bibendum', bodyText: 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.' },
-      { icon: 'gem', headerLabel: 'Aliquam urna dapibus', bodyText: 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.' },
-    ]
-  }
-]
+const { sections } = siteData
+const whatWeDoSection = sections.find(section => section.id === 'whatWeDo') || { data: [] }
 
 const ListRow = ({ row = [] }) => {
   return (
@@ -81,7 +62,7 @@ const WhatWeDoSection = ({ onClick }) => {
         Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.
       </p>
       <div className='what-we-do-content-container'>
-        {WHAT_WE_DO_LIST.map((rowItem, index) => {
+        {whatWeDoSection.data.map((rowItem, index) => {
           return (
             <ListRow key={`lr_${index}`} {...rowItem} />
           )

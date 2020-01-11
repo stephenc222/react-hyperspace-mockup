@@ -23,6 +23,50 @@ const siteData = {
     'dolor pulvinar etiam.',
     'sagittis adipiscing.',
     'felis enim feugiat.'
+  ],
+  sections: [
+    {
+      id: 'whatWeDo', data: [
+        {
+          row: [
+
+            { icon: 'code', headerLabel: 'Lorem ipsum amet', bodyText: 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.' },
+            { icon: 'lock', headerLabel: 'Aliquam sed nullam', bodyText: 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.' },
+          ]
+        },
+        {
+          row: [
+            { icon: 'cog', headerLabel: 'Sed erat ullam corper', bodyText: 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.' },
+            { icon: 'desktop', headerLabel: 'Veroeros quis lorem', bodyText: 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.' },
+          ]
+        },
+        {
+          row: [
+            { icon: 'link', headerLabel: 'Urna quis bibendum', bodyText: 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.' },
+            { icon: 'gem', headerLabel: 'Aliquam urna dapibus', bodyText: 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.' },
+          ]
+        }
+      ]
+    },
+    {
+      id: 'whoWeAre', data: [
+        {
+          headerLabel: 'Sed ipsum dolor',
+          imageFile: 'hand_holding_phone',
+          bodyText: 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.'
+        },
+        {
+          headerLabel: 'Feugiat consequat',
+          imageFile: 'street_view',
+          bodyText: 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.'
+        },
+        {
+          headerLabel: 'Ultricies aliquam',
+          imageFile: 'guy_gazing',
+          bodyText: 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.'
+        },
+      ]
+    }
   ]
 }
 

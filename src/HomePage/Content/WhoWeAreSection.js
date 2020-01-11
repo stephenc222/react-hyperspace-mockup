@@ -4,24 +4,10 @@ import Image from '../../components/Image'
 import Header from '../../components/Header'
 import './WhoWeAreSection.css'
 import { addTargetRef, onTargetScroll } from '../../utils/AutoScroll'
+import siteData from '../../siteData'
 
-const WHO_WE_ARE_SECTIONS = [
-  {
-    headerLabel: 'Sed ipsum dolor',
-    imageFile: 'hand_holding_phone',
-    bodyText: 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.'
-  },
-  {
-    headerLabel: 'Feugiat consequat',
-    imageFile: 'street_view',
-    bodyText: 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.'
-  },
-  {
-    headerLabel: 'Ultricies aliquam',
-    imageFile: 'guy_gazing',
-    bodyText: 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.'
-  },
-]
+const { sections } = siteData
+const whatWeDoSection = sections.find(section => section.id === 'whatWeDo') || { data: [] }
 
 const SubSectionItem = ({ headerLabel, bodyText, onClick, imageFile }) => {
   return (
@@ -39,7 +25,7 @@ const SubSectionItem = ({ headerLabel, bodyText, onClick, imageFile }) => {
 const WhoWeAreSection = ({ onClick = () => { } }) => {
   return (
     <div onScroll={onTargetScroll} ref={(ref) => addTargetRef({ ref, id: 'whoWeAreSection' })} className='who-we-are-section-container'>
-      {WHO_WE_ARE_SECTIONS.map((sectionProp, index) => <SubSectionItem key={`ssi_${index}`} {...sectionProp} onClick={onClick} />)}
+      {whatWeDoSection.data.map((sectionProp, index) => <SubSectionItem key={`ssi_${index}`} {...sectionProp} onClick={onClick} />)}
     </div>
   )
 }
