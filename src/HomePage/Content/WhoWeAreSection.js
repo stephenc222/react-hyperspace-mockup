@@ -7,7 +7,7 @@ import { addTargetRef, onTargetScroll } from '../../utils/AutoScroll'
 import siteData from '../../siteData'
 
 const { sections } = siteData
-const whatWeDoSection = sections.find(section => section.id === 'whatWeDo') || { data: [] }
+const whatWeDoSection = sections.find(section => section.id === 'whoWeAre') || { data: [] }
 
 const SubSectionItem = ({ headerLabel, bodyText, onClick, imageFile }) => {
   return (
