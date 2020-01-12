@@ -50,10 +50,10 @@
 }
 
 @media (min-width: 421px) {
-
   .header-link-company-name {
     cursor: pointer;
   }
+
   .header-container {
     display: flex;
     justify-content: space-between;
@@ -87,13 +87,14 @@
     cursor: pointer;
   }
 
-  .header-link-item-content--active:hover {
+  .header-link-item-content--active {
     display: flex;
     color: white;
     padding-right: 2em;
     cursor: pointer;
   }
-  .header-link-item-content--active {
+
+  .header-link-item-content--active:hover {
     display: flex;
     color: white;
     padding-right: 2em;

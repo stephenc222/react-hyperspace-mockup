@@ -1,6 +1,5 @@
 import React from 'react'
 import SiteHeader from 'components/SiteHeader'
-import './ElementsPage.css'
 import Footer from 'components/Footer'
 import Page from 'components/Page'
 import TextSection from './Sections/TextSection'

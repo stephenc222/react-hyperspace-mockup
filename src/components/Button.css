@@ -13,23 +13,22 @@
   font-weight: bold;
   max-width: 145px;
   max-height: 5em;
-  /* TODO: perhaps add an :after pseudo element, scaled to 25%, 
-  centered, then grow to 100% to better match mockup hover animation 
+
+  /* TODO: perhaps add an :after pseudo element, scaled to 25%,
+  centered, then grow to 100% to better match mockup hover animation
   */
   transition: background-color 0.2s ease-out, border 0.2s ease-out;
 }
 
-/* For buttons. Don't judge me... yet */
 .inverse {
   background: white;
-  color:#312450; 
+  color: #312450;
 }
 
 .small {
   border-radius: 3em;
   font-size: 0.4em;
-  /* max-width: 75px;*/
-  min-width: 75px; 
+  min-width: 75px;
   max-height: 4.5em;
   padding: 0 1.75em;
 }
@@ -52,8 +51,6 @@
 }
 
 .grow {
-  /* min-width: 100%;
-  max-width: 100%; */
   max-width: none;
   flex: 1;
   flex-grow: 1;

@@ -9,7 +9,6 @@ import Footer from 'components/Footer'
 import { onTargetScroll } from 'utils/AutoScroll'
 import PageContent from 'components/PageContent'
 import siteData from 'siteData'
-import './Content.css'
 import './HomePage.css'
 
 const { sidebarLinks } = siteData

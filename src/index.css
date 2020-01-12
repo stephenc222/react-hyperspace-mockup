@@ -6,11 +6,13 @@
     height: 100vh;
     width: 100vw;
   }
+
   #root {
     width: 100%;
     height: 100%;
   }
 }
+
 @media screen and (max-width: 420px) {
   body {
     background-color: #312450;
@@ -19,6 +21,7 @@
     height: 100%;
     width: 100%;
   }
+
   #root {
     width: 100%;
     height: 100%;
@@ -26,8 +29,7 @@
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 h2 {
@@ -35,7 +37,9 @@ h2 {
   font-size: 1.75em;
 }
 
-input:focus, textarea:focus, select:focus{
+input:focus,
+textarea:focus,
+select:focus {
   outline: none;
   box-shadow: 0 0 0 1pt white;
 }

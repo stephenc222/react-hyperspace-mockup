@@ -56,26 +56,20 @@
 
 /* When the radio-button is checked, add a blue background */
 .input-container input:checked ~ .input-radio-button {
-  border-radius: 0.25em;
   border: 1px solid rgba(255, 255, 255, 0.55);
   border-radius: 50%;
   background-color: white;
 }
 
 /* Create the radio-button/indicator (hidden when not checked) */
-.input-radio-button:after {
+.input-radio-button::after {
   content: "";
   position: absolute;
   display: none;
 }
 
-/* Show the radio-button when checked */
-.input-container input:checked ~ .input-radio-button:after {
-  display: block;
-}
-
 /* Style the radio-button/indicator */
-.input-container .input-radio-button:after {
+.input-container .input-radio-button::after {
   left: 9px;
   top: 5px;
   width: 5px;
@@ -85,4 +79,9 @@
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+/* Show the radio-button when checked */
+.input-container input:checked ~ .input-radio-button::after {
+  display: block;
 }

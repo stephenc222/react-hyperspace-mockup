@@ -6,7 +6,6 @@ import siteData from 'siteData'
 import Image from 'components/Image'
 import PageContent from 'components/PageContent'
 import Header from 'components/Header'
-import './GenericPage.css'
 
 const { headerLinks } = siteData
 

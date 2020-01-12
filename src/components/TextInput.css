@@ -12,11 +12,11 @@
 }
 
 .text-input-container input {
-  background:  rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.05);
   border: solid 1px rgba(255, 255, 255, 0.15);
   border-radius: 0.25em;
   padding: 0 1em;
-  color:rgba(255, 255, 255, 0.55);
+  color: rgba(255, 255, 255, 0.55);
   font-size: 13pt;
   height: 2.75em;
 }
