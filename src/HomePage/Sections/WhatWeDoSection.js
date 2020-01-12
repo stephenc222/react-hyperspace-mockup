@@ -1,9 +1,9 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Button from '../../components/Button'
-import Header from '../../components/Header'
-import { addTargetRef } from '../../utils/AutoScroll'
-import siteData from '../../siteData'
+import Button from 'components/Button'
+import Header from 'components/Header'
+import { addTargetRef } from 'utils/AutoScroll'
+import siteData from 'siteData'
 import './WhatWeDoSection.css'
 
 const { sections } = siteData

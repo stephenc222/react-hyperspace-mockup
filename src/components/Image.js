@@ -1,5 +1,5 @@
 import React from 'react'
-import ImageUtils from '../utils/ImageUtils'
+import ImageUtils from 'utils/ImageUtils'
 import './Image.css'
 
 const Image = ({ filename, className, containerStyle, imgStyle }) => {

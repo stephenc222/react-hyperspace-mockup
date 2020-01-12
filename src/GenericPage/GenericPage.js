@@ -1,11 +1,11 @@
 import React from 'react'
-import SiteHeader from '../components/SiteHeader'
-import Footer from '../components/Footer'
-import Page from '../components/Page'
-import siteData from '../siteData'
-import Image from '../components/Image'
-import PageContent from '../components/PageContent'
-import Header from '../components/Header'
+import SiteHeader from 'components/SiteHeader'
+import Footer from 'components/Footer'
+import Page from 'components/Page'
+import siteData from 'siteData'
+import Image from 'components/Image'
+import PageContent from 'components/PageContent'
+import Header from 'components/Header'
 import './GenericPage.css'
 
 const { headerLinks } = siteData

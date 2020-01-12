@@ -1,7 +1,7 @@
 import React from 'react'
 import Section from './Section'
-import Table from '../../components/Table'
-import Header from '../../components/Header'
+import Table from 'components/Table'
+import Header from 'components/Header'
 
 const TABLE_ONE_COLUMNS = [
   { key: 'name', label: 'Name' },

@@ -1,7 +1,7 @@
 import React from 'react'
 import Section from './Section'
-import DottedLink from '../../components/DottedLink'
-import Header from '../../components/Header'
+import DottedLink from 'components/DottedLink'
+import Header from 'components/Header'
 
 const codeText = `
   i = 0;

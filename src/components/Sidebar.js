@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import './Sidebar.css'
-import { onControlScroll, addControllerRef } from '../utils/AutoScroll'
-import eventController from '../utils/eventController'
+import { onControlScroll, addControllerRef } from 'utils/AutoScroll'
+import eventController from 'utils/eventController'
 
 const SidebarItem = ({ label, activeSection, sectionName, onActiveSectionChange }) => {
   return (

@@ -1,8 +1,8 @@
 import React from 'react'
-import Button from '../../components/Button'
-import DottedLink from '../../components/DottedLink'
-import Header from '../../components/Header'
-import { addTargetRef, onControlScroll } from '../../utils/AutoScroll'
+import Button from 'components/Button'
+import DottedLink from 'components/DottedLink'
+import Header from 'components/Header'
+import { addTargetRef, onControlScroll } from 'utils/AutoScroll'
 import './WelcomeSection.css'
 
 

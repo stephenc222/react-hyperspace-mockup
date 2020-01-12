@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import Section from './Section'
-import TextInput from '../../components/TextInput'
-import Select from '../../components/Select'
-import TextArea from '../../components/TextArea'
-import Button from '../../components/Button'
-import RadioButton from '../../components/RadioButton'
-import Checkbox from '../../components/Checkbox'
+import TextInput from 'components/TextInput'
+import Select from 'components/Select'
+import TextArea from 'components/TextArea'
+import Button from 'components/Button'
+import RadioButton from 'components/RadioButton'
+import Checkbox from 'components/Checkbox'
 
 const OPTIONS = [
   'Manufacturing',

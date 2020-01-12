@@ -1,6 +1,6 @@
 import React from 'react'
 import Section from './Section'
-import Button from '../../components/Button'
+import Button from 'components/Button'
 
 const BUTTON_SPACING = { marginBottom: 10, marginTop: 10, marginRight: 20 }
 

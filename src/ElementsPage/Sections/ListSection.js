@@ -1,9 +1,9 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Section from './Section'
-import List from '../../components/List'
-import Header from '../../components/Header'
-import siteData from '../../siteData'
+import List from 'components/List'
+import Header from 'components/Header'
+import siteData from 'siteData'
 
 const {
   orderedListData,
