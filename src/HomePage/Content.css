@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   background-color: #5e42a6;
-  background-image: url('../intro.svg');
+  background-image: url('./intro.svg');
   background-size: 100% 100%;
   background-position: top right;
   background-repeat: no-repeat;
