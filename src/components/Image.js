@@ -12,7 +12,7 @@ const Image = ({ filename, className, containerStyle, imgStyle }) => {
         alt={`${filename || 'an image'}`}
         style={{
           width: '100%',
-          height: 'auto',
+          height: '100%',
           ...imgStyle
         }} src={ImageUtils.getImage(filename)} />
     </div>

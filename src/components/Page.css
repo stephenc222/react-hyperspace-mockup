@@ -3,8 +3,9 @@
     display: flex;
     flex-grow: 1;
     background-color: #312450;
-    width: 100%;
     color: rgba(255, 255, 255, 0.55);
+    padding-left: 2em;
+    padding-right: 2em;
   }
 
   .page-content-container h1::after {
@@ -19,8 +20,6 @@
   .page-content {
     display: flex;
     flex-direction: column;
-    margin-left: 2em;
-    margin-right: 2em;
     margin-top: 5em;
     width: 100%;
     line-height: 28px;
