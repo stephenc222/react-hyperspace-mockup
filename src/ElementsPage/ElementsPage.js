@@ -11,20 +11,17 @@ import FormSection from './Sections/FormSection'
 import ImageSection from './Sections/ImageSection'
 import PageContent from 'components/PageContent'
 import Header from 'components/Header'
-import siteData from 'siteData'
 
-const { headerLinks } = siteData
-
-const ElementsPage = ({ history }) => {
+const ElementsPage = ({ history, ...props }) => {
   return (
     <Page>
-      <SiteHeader history={history} headerLinks={headerLinks} />
+      <SiteHeader history={history} {...props} />
       <PageContent>
         <Header>
           Elements
         </Header>
         <TextSection />
-        <ListSection />
+        <ListSection {...props} />
         <ActionsSection />
         <TableSection />
         <ButtonsSection />

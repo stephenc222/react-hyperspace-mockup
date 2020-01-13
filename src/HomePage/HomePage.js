@@ -7,13 +7,11 @@ import WhatWeDoSection from './Sections/WhatWeDoSection'
 import ContactSection from './Sections/ContactSection'
 import Footer from 'components/Footer'
 import { onTargetScroll } from 'utils/AutoScroll'
+import getSection from 'utils/getSection'
 import PageContent from 'components/PageContent'
-import siteData from 'siteData'
 import './HomePage.css'
 
-const { sidebarLinks } = siteData
-
-const HomePage = ({ history }) => {
+const HomePage = ({ history, sidebarLinks, sections }) => {
   const [activeSection, onActiveSectionChange] = useState('welcomeSection')
   return (
     <Page pageContainerClassName='home-page-container'>
@@ -27,8 +25,8 @@ const HomePage = ({ history }) => {
         pageContentContainerClassName={'home-page-content-container'}
         pageContentClassName='home-page-content-container-content'>
         <WelcomeSection history={history} />
-        <WhoWeAreSection onClick={() => history.push('/generic')} />
-        <WhatWeDoSection onClick={() => history.push('/generic')} />
+        <WhoWeAreSection section={getSection(sections, 'whoWeAre')} onClick={() => history.push('/generic')} />
+        <WhatWeDoSection section={getSection(sections, 'whatWeDo')} onClick={() => history.push('/generic')} />
         <ContactSection onClick={() => history.push('/generic')} />
         <Footer />
       </PageContent>

@@ -3,14 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Section from './Section'
 import List from 'components/List'
 import Header from 'components/Header'
-import siteData from 'siteData'
 
-const {
-  orderedListData,
-  unOrderedListData,
-} = siteData
-
-const ListSection = () => {
+const ListSection = ({ unOrderedListData, orderedListData }) => {
   return (
     <Section header='Lists'>
       <div className='list-section-content'>

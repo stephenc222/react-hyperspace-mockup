@@ -29,6 +29,7 @@ import {
 import HomePage from './HomePage/HomePage'
 import GenericPage from './GenericPage/GenericPage'
 import ElementsPage from './ElementsPage/ElementsPage'
+import siteData from 'siteData'
 import './index.css'
 
 const history = createBrowserHistory()
@@ -55,9 +56,9 @@ library.add(
 function App() {
   return (
     <Router history={history}>
-      <Route exact path='/generic' component={GenericPage} />
-      <Route exact path='/elements' component={ElementsPage} />
-      <Route exact path='/' component={HomePage} />
+      <Route exact path='/generic' render={props => <GenericPage {...siteData} {...props} />} />
+      <Route exact path='/elements' render={props => <ElementsPage {...siteData} {...props} />} />
+      <Route exact path='/' render={props => <HomePage {...siteData} {...props} />} />
     </Router>
   )
 }

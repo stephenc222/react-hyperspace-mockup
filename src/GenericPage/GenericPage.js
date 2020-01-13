@@ -2,14 +2,11 @@ import React from 'react'
 import SiteHeader from 'components/SiteHeader'
 import Footer from 'components/Footer'
 import Page from 'components/Page'
-import siteData from 'siteData'
 import Image from 'components/Image'
 import PageContent from 'components/PageContent'
 import Header from 'components/Header'
 
-const { headerLinks } = siteData
-
-const GenericPage = ({ history }) => {
+const GenericPage = ({ history, headerLinks }) => {
   return (
     <Page>
       <SiteHeader headerLinks={headerLinks} history={history} />

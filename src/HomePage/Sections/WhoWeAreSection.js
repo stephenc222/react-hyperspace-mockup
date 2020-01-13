@@ -4,10 +4,6 @@ import Image from 'components/Image'
 import Header from 'components/Header'
 import './WhoWeAreSection.css'
 import { addTargetRef, onTargetScroll } from 'utils/AutoScroll'
-import siteData from 'siteData'
-
-const { sections } = siteData
-const whatWeDoSection = sections.find(section => section.id === 'whoWeAre') || { data: [] }
 
 const SubSectionItem = ({ headerLabel, bodyText, onClick, imageFile }) => {
   return (
@@ -22,10 +18,10 @@ const SubSectionItem = ({ headerLabel, bodyText, onClick, imageFile }) => {
   )
 }
 
-const WhoWeAreSection = ({ onClick = () => { } }) => {
+const WhoWeAreSection = ({ onClick = () => { }, section = [] }) => {
   return (
     <div onScroll={onTargetScroll} ref={(ref) => addTargetRef({ ref, id: 'whoWeAreSection' })} className='who-we-are-section-container'>
-      {whatWeDoSection.data.map((sectionProp, index) => <SubSectionItem key={`ssi_${index}`} {...sectionProp} onClick={onClick} />)}
+      {section.data.map((sectionProp, index) => <SubSectionItem key={`ssi_${index}`} {...sectionProp} onClick={onClick} />)}
     </div>
   )
 }
