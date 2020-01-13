@@ -1,10 +1,10 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Button from '../../components/Button'
-import TextInput from '../../components/TextInput'
-import TextArea from '../../components/TextArea'
-import Header from '../../components/Header'
-import { addTargetRef } from '../../utils/AutoScroll'
+import Button from 'components/Button'
+import TextInput from 'components/TextInput'
+import TextArea from 'components/TextArea'
+import Header from 'components/Header'
+import { addTargetRef } from 'utils/AutoScroll'
 import './ContactSection.css'
 
 const Address = (
