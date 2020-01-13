@@ -2,13 +2,13 @@ import React from 'react'
 import SiteHeader from 'components/SiteHeader'
 import Footer from 'components/Footer'
 import Page from 'components/Page'
-import TextSection from './Sections/TextSection'
-import ListSection from './Sections/ListSection'
-import ActionsSection from './Sections/ActionsSection'
-import ButtonsSection from './Sections/ButtonsSection'
-import TableSection from './Sections/TableSection'
-import FormSection from './Sections/FormSection'
-import ImageSection from './Sections/ImageSection'
+import TextSection from 'components/TextSection'
+import ListSection from 'components/ListSection'
+import ActionsSection from 'components/ActionsSection'
+import ButtonsSection from 'components/ButtonsSection'
+import TableSection from 'components/TableSection'
+import FormSection from 'components/FormSection'
+import ImageSection from 'components/ImageSection'
 import PageContent from 'components/PageContent'
 import Header from 'components/Header'
 
@@ -17,8 +17,7 @@ const ElementsPage = ({ history, ...props }) => {
     <Page>
       <SiteHeader history={history} {...props} />
       <PageContent>
-        <Header>
-          Elements
+        <Header children='Elements'>
         </Header>
         <TextSection />
         <ListSection {...props} />
