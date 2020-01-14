@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './Select.css'
 
 
@@ -26,6 +27,14 @@ const Select = ({ label, options, onChange, selected, placeholder = '', formatOp
       </select>
     </div>
   )
+}
+
+Select.propTypes = {
+  label: PropTypes.string,
+  option: PropTypes.array,
+  onChange: PropTypes.func.isRequired,
+  placeholder: PropTypes.string,
+  formatOption: PropTypes.func
 }
 
 export default Select

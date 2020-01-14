@@ -9,4 +9,6 @@ const GenericPageText = () => {
   )
 }
 
+GenericPageText.propTypes = {}
+
 export default GenericPageText

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Button from 'components/Button'
 import Header from 'components/Header'
@@ -16,8 +17,7 @@ const ListRow = ({ row = [] }) => {
 }
 
 // has icon, sub header, and paragraph text
-const ListItem = (props) => {
-  const { icon, headerLabel, bodyText } = props
+const ListItem = ({ icon, headerLabel, bodyText }) => {
   return (
     <div className='list-item' style={{ borderTop: '1px solid rgba(255, 255, 255, 0.15)', width: '100%' }}>
       <div style={{ display: 'flex', alignItems: 'center', padding: 20 }}>
@@ -67,6 +67,11 @@ const WhatWeDoSection = ({ onClick, section = [] }) => {
       <Button onClick={onClick} label='Learn More' />
     </div>
   )
+}
+
+WhatWeDoSection.propTypes = {
+  onClick: PropTypes.func.isRequired,
+  section: PropTypes.object.isRequired
 }
 
 export default WhatWeDoSection

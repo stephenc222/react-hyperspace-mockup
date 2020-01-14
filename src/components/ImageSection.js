@@ -51,4 +51,6 @@ const ImageSection = () => {
   )
 }
 
+ImageSection.propTypes = {}
+
 export default ImageSection

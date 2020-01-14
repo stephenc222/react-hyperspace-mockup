@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './Page.css'
 
 const Page = ({ children, pageContainerClassName = 'page-container', ...props }) => {
@@ -20,5 +21,10 @@ const Page = ({ children, pageContainerClassName = 'page-container', ...props })
   )
 }
 
+Page.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+  pageContainerClassName: PropTypes.string,
+  props: PropTypes.any
+}
 
 export default Page

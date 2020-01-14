@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './RadioButton.css'
 
 const RadioButton = ({ radioValue, label, checked, onChange }) => {
@@ -12,6 +13,13 @@ const RadioButton = ({ radioValue, label, checked, onChange }) => {
       </div>
     </div>
   )
+}
+
+RadioButton.propTypes = {
+  radioValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  label: PropTypes.string.isRequired,
+  checked: PropTypes.bool.isRequired,
+  onChange: PropTypes.func.isRequired
 }
 
 export default RadioButton

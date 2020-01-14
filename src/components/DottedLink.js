@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const DottedLink = ({
   text,
@@ -11,5 +12,11 @@ const DottedLink = ({
   >
     {text}
   </span>
+
+DottedLink.propTypes = {
+  text: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
+  href: PropTypes.string,
+  style: PropTypes.object
+}
 
 export default DottedLink

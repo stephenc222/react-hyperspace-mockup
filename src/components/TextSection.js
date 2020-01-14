@@ -41,4 +41,6 @@ const TextSection = () => {
   )
 }
 
+TextSection.propTypes = {}
+
 export default TextSection

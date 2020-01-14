@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Button from 'components/Button'
 import Image from 'components/Image'
 import Header from 'components/Header'
@@ -25,5 +26,11 @@ const WhoWeAreSection = ({ onClick = () => { }, section = [] }) => {
     </div>
   )
 }
+
+WhoWeAreSection.propTypes = {
+  onClick: PropTypes.func,
+  section: PropTypes.object
+}
+
 
 export default WhoWeAreSection

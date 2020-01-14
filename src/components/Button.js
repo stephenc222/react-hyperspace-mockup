@@ -1,7 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './Button.css'
 
-const getClassName = (inverse, size = '', disabled = false) => {
+const getClassName = (inverse = false, size = '', disabled = false) => {
   if (inverse) {
     return `button-container inverse ${size} ${disabled ? 'disabled' : ''}`
   }
@@ -14,6 +15,12 @@ const Button = ({ label, onClick, inverse, size, style, disabled }) => {
       <div>{label}</div>
     </div>
   )
+}
+
+Button.propTypes = {
+  inverse: PropTypes.bool,
+  size: PropTypes.string,
+  disabled: PropTypes.bool
 }
 
 export default Button

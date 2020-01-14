@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './PageContent.css'
 
 const PageContent = ({
@@ -28,6 +29,13 @@ const PageContent = ({
       </div>
     </div>
   )
+}
+
+PageContent.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+  pageContentContainerClassName: PropTypes.string,
+  pageContentClassName: PropTypes.string,
+  onScroll: PropTypes.func
 }
 
 export default PageContent

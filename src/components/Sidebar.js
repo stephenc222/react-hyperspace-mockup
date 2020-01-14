@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react'
-import './Sidebar.css'
+import PropTypes from 'prop-types'
 import { onControlScroll, addControllerRef } from 'utils/AutoScroll'
 import eventController from 'utils/eventController'
+import './Sidebar.css'
 
 const SidebarItem = ({ label, activeSection, sectionName, onActiveSectionChange }) => {
   return (
@@ -14,8 +15,7 @@ const SidebarItem = ({ label, activeSection, sectionName, onActiveSectionChange 
   )
 }
 
-const Sidebar = (props) => {
-  const { sidebarLinks, activeSection, onActiveSectionChange } = props
+const Sidebar = ({ sidebarLinks, activeSection, onActiveSectionChange }) => {
   useEffect(() => {
     const onTargetScrollEvent = eventController.on('SCROLLED_TO_TARGET', ({ targetId }) => {
       onActiveSectionChange(targetId)
@@ -40,6 +40,12 @@ const Sidebar = (props) => {
       </div>
     </div>
   )
+}
+
+Sidebar.propTypes = {
+  sidebarLinks: PropTypes.array,
+  activeSection: PropTypes.string,
+  onActiveSectionChange: PropTypes.func
 }
 
 export default Sidebar

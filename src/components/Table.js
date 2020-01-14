@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './Table.css'
 
 const TableHeadCell = ({ label }) => {
@@ -62,6 +63,14 @@ const Table = ({ columns, data, summaryValue, tableClassName = '', formatSummary
       </table>
     </div>
   )
+}
+
+Table.propTypes = {
+  columns: PropTypes.array.isRequired,
+  data: PropTypes.array.isRequired,
+  summaryValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  tableClassName: PropTypes.string,
+  formatSummaryData: PropTypes.func.isRequired
 }
 
 export default Table

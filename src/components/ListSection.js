@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Section from './Section'
 import List from 'components/List'
@@ -36,6 +37,11 @@ const ListSection = ({ unOrderedListData, orderedListData }) => {
       </div>
     </Section>
   )
+}
+
+ListSection.propTypes = {
+  unOrderedListData: PropTypes.array.isRequired,
+  orderedListData: PropTypes.array.isRequired
 }
 
 export default ListSection

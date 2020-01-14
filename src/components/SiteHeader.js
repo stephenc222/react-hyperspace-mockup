@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './SiteHeader.css'
 
 const CompanyName = ({ history }) => <div onClick={() => history.push('/')} className='header-link-company-name'>hyperspace</div>
@@ -30,6 +31,11 @@ const SiteHeader = ({ history, headerLinks = [] }) => {
       </div>
     </div>
   )
+}
+
+SiteHeader.propTypes = {
+  history: PropTypes.object.isRequired,
+  headerLinks: PropTypes.array
 }
 
 export default SiteHeader

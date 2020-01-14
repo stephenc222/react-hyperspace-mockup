@@ -37,4 +37,6 @@ const ActionsSection = () => {
   )
 }
 
+ActionsSection.propTypes = {}
+
 export default ActionsSection

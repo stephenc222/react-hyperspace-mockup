@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Header from 'components/Header'
 import './Section.css'
 
@@ -15,6 +16,12 @@ const Section = ({ header = '', children = '', ...props }) => {
       </div>
     </div>
   )
+}
+
+Section.propTypes = {
+  header: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+  props: PropTypes.any
 }
 
 export default Section

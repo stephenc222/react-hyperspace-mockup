@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './Header.css'
 
 const Header = ({ children, priority = '1', ...props }) => {
@@ -15,6 +16,12 @@ const Header = ({ children, priority = '1', ...props }) => {
       {children}
     </HeaderElem>
   )
+}
+
+Header.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+  priority: PropTypes.string,
+  props: PropTypes.any
 }
 
 export default Header

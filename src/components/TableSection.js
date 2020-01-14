@@ -42,4 +42,6 @@ const TableSection = () => {
   )
 }
 
+TableSection.propTypes = {}
+
 export default TableSection

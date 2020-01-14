@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './TextArea.css'
 
 const TextArea = ({ label, placeholder }) => {
@@ -8,6 +9,11 @@ const TextArea = ({ label, placeholder }) => {
       <textarea placeholder={placeholder} />
     </div>
   )
+}
+
+TextArea.propTypes = {
+  label: PropTypes.string,
+  placeholder: PropTypes.string
 }
 
 export default TextArea

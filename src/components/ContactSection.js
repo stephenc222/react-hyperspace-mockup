@@ -86,4 +86,6 @@ const ContactSection = () => {
   )
 }
 
+ContactSection.propTypes = {}
+
 export default ContactSection

@@ -19,4 +19,6 @@ const WelcomeSection = () => {
   )
 }
 
+WelcomeSection.propTypes = {}
+
 export default WelcomeSection

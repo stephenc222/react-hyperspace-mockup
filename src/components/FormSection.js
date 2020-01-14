@@ -54,4 +54,6 @@ const FormSection = () => {
   )
 }
 
+FormSection.propTypes = {}
+
 export default FormSection

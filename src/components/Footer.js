@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import DottedLink from './DottedLink'
 import './Footer.css'
 
@@ -12,6 +13,10 @@ const Footer = ({ style = {} }) => {
       </div>
     </div>
   )
+}
+
+Footer.propTypes = {
+  style: PropTypes.object
 }
 
 export default Footer
