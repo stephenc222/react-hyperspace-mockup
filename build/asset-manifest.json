@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.47e1d78c.css",
+    "main.js": "/static/js/main.0c4e912b.js",
+    "static/media/street_view.jpg": "/static/media/street_view.e373a516d718fffe79b2.jpg",
+    "static/media/hand_holding_phone_wide.jpg": "/static/media/hand_holding_phone_wide.ca568c58a0c6df95b415.jpg",
+    "static/media/guy_gazing.jpg": "/static/media/guy_gazing.b306fbbf88f43b48c403.jpg",
+    "static/media/hand_holding_phone.jpg": "/static/media/hand_holding_phone.2ef4e0d1401fa6c759fa.jpg",
+    "static/media/intro.svg": "/static/media/intro.63e0eb5892b7f6581bf3.svg",
+    "index.html": "/index.html",
+    "main.47e1d78c.css.map": "/static/css/main.47e1d78c.css.map",
+    "main.0c4e912b.js.map": "/static/js/main.0c4e912b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.47e1d78c.css",
+    "static/js/main.0c4e912b.js"
+  ]
+}
