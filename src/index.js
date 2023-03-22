@@ -1,11 +1,7 @@
-import React from 'react'
-import {
-  Router,
-  Route,
-} from "react-router-dom"
-import { createBrowserHistory } from 'history'
-import ReactDOM from 'react-dom'
-import { library } from '@fortawesome/fontawesome-svg-core'
+import React from "react"
+import * as ReactDOM from "react-dom/client"
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import { library } from "@fortawesome/fontawesome-svg-core"
 import {
   faCheckSquare,
   faCode,
@@ -16,23 +12,21 @@ import {
   faLock,
   faSave,
   faUpload,
-  faDownload
-} from '@fortawesome/free-solid-svg-icons'
+  faDownload,
+} from "@fortawesome/free-solid-svg-icons"
 import {
   fab,
   faLinkedinIn,
   faFacebookF,
   faGithub,
   faTwitter,
-  faInstagram
-} from '@fortawesome/free-brands-svg-icons'
-import HomePage from './HomePage/HomePage'
-import GenericPage from './GenericPage/GenericPage'
-import ElementsPage from './ElementsPage/ElementsPage'
-import siteData from 'siteData'
-import './index.css'
-
-const history = createBrowserHistory()
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons"
+import HomePage from "./HomePage/HomePage"
+import GenericPage from "./GenericPage/GenericPage"
+import ElementsPage from "./ElementsPage/ElementsPage"
+import siteData from "siteData"
+import "./index.css"
 
 library.add(
   fab,
@@ -53,14 +47,21 @@ library.add(
   faDownload
 )
 
-function App() {
-  return (
-    <Router history={history}>
-      <Route exact path='/generic' render={props => <GenericPage {...siteData} {...props} />} />
-      <Route exact path='/elements' render={props => <ElementsPage {...siteData} {...props} />} />
-      <Route exact path='/' render={props => <HomePage {...siteData} {...props} />} />
-    </Router>
-  )
-}
+const router = createBrowserRouter([
+  {
+    path: "/generic",
+    Component: (props) => <GenericPage {...siteData} {...props} />,
+  },
+  {
+    path: "/elements",
+    Component: (props) => <ElementsPage {...siteData} {...props} />,
+  },
+  {
+    path: "/",
+    Component: (props) => <HomePage {...siteData} {...props} />,
+  },
+])
 
-ReactDOM.render(<App />, document.getElementById('root'))
+const root = ReactDOM.createRoot(document.getElementById("root"))
+
+root.render(<RouterProvider router={router} />)
