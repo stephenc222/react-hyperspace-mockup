@@ -47,20 +47,25 @@ library.add(
   faDownload
 )
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/generic",
+      Component: (props) => <GenericPage {...siteData} {...props} />,
+    },
+    {
+      path: "/elements",
+      Component: (props) => <ElementsPage {...siteData} {...props} />,
+    },
+    {
+      path: "/",
+      Component: (props) => <HomePage {...siteData} {...props} />,
+    },
+  ],
   {
-    path: "/generic",
-    Component: (props) => <GenericPage {...siteData} {...props} />,
-  },
-  {
-    path: "/elements",
-    Component: (props) => <ElementsPage {...siteData} {...props} />,
-  },
-  {
-    path: "/",
-    Component: (props) => <HomePage {...siteData} {...props} />,
-  },
-])
+    basename: process.env.PUBLIC_URL,
+  }
+)
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 
