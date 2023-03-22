@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.47e1d78c.css",
-    "main.js": "/static/js/main.0c4e912b.js",
-    "static/media/street_view.jpg": "/static/media/street_view.e373a516d718fffe79b2.jpg",
-    "static/media/hand_holding_phone_wide.jpg": "/static/media/hand_holding_phone_wide.ca568c58a0c6df95b415.jpg",
-    "static/media/guy_gazing.jpg": "/static/media/guy_gazing.b306fbbf88f43b48c403.jpg",
-    "static/media/hand_holding_phone.jpg": "/static/media/hand_holding_phone.2ef4e0d1401fa6c759fa.jpg",
-    "static/media/intro.svg": "/static/media/intro.63e0eb5892b7f6581bf3.svg",
-    "index.html": "/index.html",
-    "main.47e1d78c.css.map": "/static/css/main.47e1d78c.css.map",
-    "main.0c4e912b.js.map": "/static/js/main.0c4e912b.js.map"
+    "main.css": "/react-hyperspace-mockup/static/css/main.f756343c.css",
+    "main.js": "/react-hyperspace-mockup/static/js/main.b264e3fb.js",
+    "static/media/street_view.jpg": "/react-hyperspace-mockup/static/media/street_view.e373a516d718fffe79b2.jpg",
+    "static/media/hand_holding_phone_wide.jpg": "/react-hyperspace-mockup/static/media/hand_holding_phone_wide.ca568c58a0c6df95b415.jpg",
+    "static/media/guy_gazing.jpg": "/react-hyperspace-mockup/static/media/guy_gazing.b306fbbf88f43b48c403.jpg",
+    "static/media/hand_holding_phone.jpg": "/react-hyperspace-mockup/static/media/hand_holding_phone.2ef4e0d1401fa6c759fa.jpg",
+    "static/media/intro.svg": "/react-hyperspace-mockup/static/media/intro.63e0eb5892b7f6581bf3.svg",
+    "index.html": "/react-hyperspace-mockup/index.html",
+    "main.f756343c.css.map": "/react-hyperspace-mockup/static/css/main.f756343c.css.map",
+    "main.b264e3fb.js.map": "/react-hyperspace-mockup/static/js/main.b264e3fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.47e1d78c.css",
-    "static/js/main.0c4e912b.js"
+    "static/css/main.f756343c.css",
+    "static/js/main.b264e3fb.js"
   ]
 }
