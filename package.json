@@ -2,6 +2,7 @@
   "name": "react-hyperspace-mockup",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://stephenc222.github.io/react-hyperspace-mockup",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@fortawesome/free-brands-svg-icons": "^6.3.0",
